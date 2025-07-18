@@ -4,7 +4,7 @@
      For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
 <robot name="Lite3">
     <mujoco>
-        <compiler meshdir="../meshes/" balanceinertia="false" discardvisual="false"/>
+        <compiler meshdir="../meshes/" balanceinertia="false" discardvisual="false" fusestatic="false"/>
     </mujoco>
     <link name="TORSO">
         <inertial>
@@ -41,7 +41,7 @@
         </inertial>
         <visual>
             <geometry>
-                <mesh filename="../meshes/hip.STL"/>
+                <mesh filename="../meshes/hip.STL" scale="1 1 1"/>
             </geometry>
         </visual>
         <collision>

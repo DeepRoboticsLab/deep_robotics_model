@@ -2,6 +2,8 @@
 
 This repository contains 3D models for three Deep Robotics robots: **Lite3**, **M20**, and **X30**. Each model is provided in MJCF, URDF, and USD formats.
 
+Note: We are using Large File System to store large meshes.
+
 ## Model Overview
 Note: High resolution models are good for new simulators like isaaclab/isaacsim but old simulators like pybullet cannot open files this big.
 ### Lite 3

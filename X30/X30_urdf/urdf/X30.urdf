@@ -4,7 +4,7 @@
      For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
 <robot name="X30">
     <mujoco>
-        <compiler meshdir="../meshes/" balanceinertia="false" discardvisual="false"/>
+        <compiler meshdir="../meshes/" balanceinertia="false" discardvisual="false" fusestatic="false"/>
     </mujoco>
   <!-- <link name="base_link">
     <inertial>

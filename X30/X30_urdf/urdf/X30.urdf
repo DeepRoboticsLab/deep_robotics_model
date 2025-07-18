@@ -21,7 +21,7 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="../meshes/torso.dae"/>
+        <mesh filename="../meshes/torso.STL"/>
       </geometry>
     </visual>
     <collision>
@@ -44,7 +44,7 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="../meshes/hip.dae"/>
+        <mesh filename="../meshes/hip.STL"/>
       </geometry>
     </visual>
   </link>
@@ -66,7 +66,7 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="../meshes/thigh.dae"/>
+        <mesh filename="../meshes/thigh.STL"/>
       </geometry>
     </visual>
     <collision>
@@ -94,7 +94,7 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="../meshes/shank.dae"/>
+        <mesh filename="../meshes/shank.STL"/>
       </geometry>
     </visual>
     <collision>
@@ -140,7 +140,7 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="../meshes/hip.dae" scale="1 -1 1"/>
+        <mesh filename="../meshes/hip.STL" scale="1 -1 1"/>
       </geometry>
     </visual>
   </link>
@@ -162,7 +162,7 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="../meshes/thigh.dae" scale="1 -1 1"/>
+        <mesh filename="../meshes/thigh.STL" scale="1 -1 1"/>
       </geometry>
     </visual>
     <collision>
@@ -190,7 +190,7 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="../meshes/shank.dae"/>
+        <mesh filename="../meshes/shank.STL"/>
       </geometry>
     </visual>
     <collision>
@@ -237,7 +237,7 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="../meshes/hip.dae" scale="-1 1 1"/>
+        <mesh filename="../meshes/hip.STL" scale="-1 1 1"/>
       </geometry>
     </visual>
   </link>
@@ -259,7 +259,7 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="../meshes/thigh.dae"/>
+        <mesh filename="../meshes/thigh.STL"/>
       </geometry>
     </visual>
     <collision>
@@ -287,7 +287,7 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="../meshes/shank.dae"/>
+        <mesh filename="../meshes/shank.STL"/>
       </geometry>
     </visual>
     <collision>
@@ -333,7 +333,7 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="../meshes/hip.dae" scale="-1 -1 1"/>
+        <mesh filename="../meshes/hip.STL" scale="-1 -1 1"/>
       </geometry>
     </visual>
   </link>
@@ -355,7 +355,7 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="../meshes/thigh.dae" scale="1 -1 1"/>
+        <mesh filename="../meshes/thigh.STL" scale="1 -1 1"/>
       </geometry>
     </visual>
     <collision>
@@ -383,7 +383,7 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="../meshes/shank.dae" />
+        <mesh filename="../meshes/shank.STL" />
       </geometry>
     </visual>
     <collision>

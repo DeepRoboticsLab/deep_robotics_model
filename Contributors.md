@@ -16,7 +16,7 @@ This is the official list of Deep Robotics Model Project developers and contribu
 
 ## Contributors
 * [Hongyi Li](https://github.com/LuyiLi)
-* [LI Peizhuo](https://www.linkedin.com/in/peizhuo-li-082235200/)
+* [LI Peizhuo](https://github.com/TWpoint)
 * [Yuxuan Ma](https://github.com/XuaaanQWQ)
 * [Zhenbiao Huang](https://github.com/legubiao)
 * [Ziqi Fan](https://github.com/fan-ziqi)

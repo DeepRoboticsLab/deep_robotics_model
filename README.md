@@ -2,8 +2,14 @@
 
 This repository contains 3D models for three Deep Robotics robots: **Lite3**, **M20**, and **X30**. Each model is provided in MJCF, URDF, and USD formats.
 
-Note: We are using Large File System to store large meshes.
+Note: We are using Large File System to store large meshes. To install `git lfs` and download the files, run the following command after `git clone` in the current directory.
 
+```bash
+sudo apt update
+sudo apt install git-lfs
+git lfs install
+git lfs pull
+```
 ## Model Overview
 Note: High resolution models are good for new simulators like isaaclab/isaacsim but old simulators like pybullet cannot open files this big.
 | Robot Model | High Resolution Image | Low Resolution Image |

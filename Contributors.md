@@ -15,6 +15,7 @@ This is the official list of Deep Robotics Model Project developers and contribu
 
 
 ## Contributors
+* [MARMotLab](https://www.marmotlab.org)
 * [Hongyi Li](https://github.com/LuyiLi)
 * [LI Peizhuo](https://github.com/TWpoint)
 * [Yuxuan Ma](https://github.com/XuaaanQWQ)

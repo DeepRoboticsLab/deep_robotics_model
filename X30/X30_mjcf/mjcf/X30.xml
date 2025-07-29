@@ -10,9 +10,17 @@
     <mesh name="thigh1" content_type="model/stl" file="thigh.STL" scale="1 -1 1"/>
     <mesh name="hip2" content_type="model/stl" file="hip.STL" scale="-1 1 1"/>
     <mesh name="hip3" content_type="model/stl" file="hip.STL" scale="-1 -1 1"/>
+    <texture name="texplane" type="2d" builtin="checker" rgb1=".2 .3 .4" rgb2=".1 0.15 0.2"
+                 width="512" height="512"/>
+        <!--        <material name='geom' texture="texgeom" texuniform="true"/>-->
+    <material name='MatPlane' reflectance='0.3' texture="texplane" texrepeat="1 1" texuniform="true"/>
   </asset>
 
   <worldbody>
+    <light directional="true" pos="-0.5 0.5 3" dir="0 0 -1"/>
+        <!--        <geom name="floor" pos="0 0 0" rgba="0.8 0.9 0.8 1" size="40 40 40" type="plane"/>-->
+    <geom name='floor' pos='0 0 -1' size='100 100 .125' type='plane' material="MatPlane" condim='3'
+              friction="1 0.01 0.01" group="0"/>
     <body name="TORSO">
       <inertial pos="0 0 0" quat="0.000872206 0.707353 0.000314919 0.70686" mass="30.7" diaginertia="0.757268 0.597627 0.364306"/>
       <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="torso"/>
@@ -30,7 +38,9 @@
             <inertial pos="0.014851 2.0685e-05 -0.12283" quat="0.707008 -0.0139742 -0.0136862 0.706935" mass="0.71386" diaginertia="0.0096272 0.00931754 0.000401781"/>
             <joint name="FL_Knee_joint" pos="0 0 0" axis="0 -1 0" range="0.349 2.531" actuatorfrcrange="-150 150"/>
             <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="shank"/>
-            <geom size="0.025 0.11" pos="0 0 -0.155" type="cylinder"/>
+            <geom size="0.025 0.05" pos="0.02 0 -0.046" quat="0.980067 0 -0.198669 0" type="cylinder"/>
+            <geom size="0.015 0.05" pos="0.045 0 -0.1421" type="cylinder"/>
+            <geom size="0.015 0.04" pos="0.02 0 -0.246" quat="0.980067 0 0.198669 0" type="cylinder"/>
             <body name="FL_FOOT" pos="0 0 -0.31">
               <inertial pos="0 0 0" mass="0.06" diaginertia="1e-12 1e-12 1e-12"/>
               <geom size="0.036"/>
@@ -51,7 +61,9 @@
             <inertial pos="0.014851 2.0687e-05 -0.12283" quat="0.707008 -0.0139742 -0.0136862 0.706935" mass="0.71386" diaginertia="0.0096272 0.00931754 0.000401781"/>
             <joint name="FR_Knee_joint" pos="0 0 0" axis="0 -1 0" range="0.349 2.531" actuatorfrcrange="-150 150"/>
             <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="shank"/>
-            <geom size="0.025 0.11" pos="0 0 -0.155" type="cylinder"/>
+            <geom size="0.025 0.05" pos="0.02 0 -0.046" quat="0.980067 0 -0.198669 0" type="cylinder"/>
+            <geom size="0.015 0.05" pos="0.045 0 -0.1421" type="cylinder"/>
+            <geom size="0.015 0.04" pos="0.02 0 -0.246" quat="0.980067 0 0.198669 0" type="cylinder"/>
             <body name="FR_FOOT" pos="0 0 -0.31">
               <inertial pos="0 0 0" mass="0.06" diaginertia="1e-12 1e-12 1e-12"/>
               <geom size="0.036"/>
@@ -72,7 +84,9 @@
             <inertial pos="0.014851 2.0679e-05 -0.12283" quat="0.707008 -0.0139742 -0.0136862 0.706935" mass="0.71386" diaginertia="0.0096272 0.00931754 0.000401781"/>
             <joint name="HL_Knee_joint" pos="0 0 0" axis="0 -1 0" range="0.349 2.531" actuatorfrcrange="-150 150"/>
             <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="shank"/>
-            <geom size="0.025 0.11" pos="0 0 -0.155" type="cylinder"/>
+            <geom size="0.025 0.05" pos="0.02 0 -0.046" quat="0.980067 0 -0.198669 0" type="cylinder"/>
+            <geom size="0.015 0.05" pos="0.045 0 -0.1421" type="cylinder"/>
+            <geom size="0.015 0.04" pos="0.02 0 -0.246" quat="0.980067 0 0.198669 0" type="cylinder"/>
             <body name="HL_FOOT" pos="0 0 -0.31">
               <inertial pos="0 0 0" mass="0.06" diaginertia="1e-12 1e-12 1e-12"/>
               <geom size="0.036"/>
@@ -93,7 +107,9 @@
             <inertial pos="0.014851 2.0679e-05 -0.12283" quat="0.707008 -0.0139742 -0.0136862 0.706935" mass="0.71386" diaginertia="0.0096272 0.00931754 0.000401781"/>
             <joint name="HR_Knee_joint" pos="0 0 0" axis="0 -1 0" range="0.349 2.531" actuatorfrcrange="-150 150"/>
             <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="shank"/>
-            <geom size="0.025 0.11" pos="0 0 -0.155" type="cylinder"/>
+            <geom size="0.025 0.05" pos="0.02 0 -0.046" quat="0.980067 0 -0.198669 0" type="cylinder"/>
+            <geom size="0.015 0.05" pos="0.045 0 -0.1421" type="cylinder"/>
+            <geom size="0.015 0.04" pos="0.02 0 -0.246" quat="0.980067 0 0.198669 0" type="cylinder"/>
             <body name="HR_FOOT" pos="0 0 -0.31">
               <inertial pos="0 0 0" mass="0.06" diaginertia="1e-12 1e-12 1e-12"/>
               <geom size="0.036"/>

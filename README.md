@@ -2,15 +2,9 @@
 
 This repository contains 3D models for three Deep Robotics robots: **Lite3**, **M20**, and **X30**. Each model is provided in MJCF, URDF, and USD formats.
 
-**Note**: We are using Large File System (LFS) to store large meshes. If you are trying to download the files, please use the following command. (Don't download the repo as a .zip file. The .usd and .dae files are stored using LFS and they cannot be downloaded in a .zip file.)
+<span style="color: red;">**Note**</span>: This repository only contains low resolution files. To download the high resolution files, please use [this link](https://drive.google.com/drive/folders/1pdS5NHTBOFvO1H5MzBtw66ajyZXlj6BQ?usp=drive_link)
 
-```bash
-sudo apt update
-sudo apt install git-lfs
-git clone https://github.com/DeepRoboticsLab/URDF_model.git
-git lfs install
-git lfs pull
-```
+
 ## Model Overview
 **Note**: High resolution models are good for new simulators like isaaclab/isaacsim but old simulators like pybullet cannot open files this big.
 | Robot Model | High Resolution Image | Low Resolution Image |

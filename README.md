@@ -1,6 +1,6 @@
 # Robot Models Repository
 
-This repository contains 3D models for three Deep Robotics robots: **Lite3**, **M20**, and **X30**. Each model is provided in MJCF, URDF, and USD formats.
+This repository contains 3D models for three Deep Robotics robots: **Lite3**, **M20**, and **X30**. Each model is provided in MJCF, URDF, and USD formats. To visualize the model and do some measuring, I recommend using this [tool](https://viewer.robotsfan.com/). Just drag your folder to the web page and you can see everything.
 
 <span style="color: red;">**Note**</span>: This repository only contains low resolution files. To download the high resolution files, please use [this link](https://drive.google.com/drive/folders/1EOELXUYSBPEJeD0rUIkJxnlLMDr6IHBV?usp=sharing)
 

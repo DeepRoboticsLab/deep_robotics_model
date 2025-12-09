@@ -59,7 +59,7 @@
                       quat="1 0 0 0"
                       mass="15.882" diaginertia="0.087919 0.533522 0.563492"/>
 
-            <site name="imu_site" pos="0.0632 -0.0268 0.0435" size="0.005" rgba="1 0 0 1"/>
+            <site name="imu_site" pos="0.0632 -0.0268 -0.0435" size="0.005" rgba="1 0 0 1"/>
             <site name="base_site" pos="0 0 0" quat="1 0 0 0"/>
 
             <geom type="mesh" mesh="base_link" class="visual"/>

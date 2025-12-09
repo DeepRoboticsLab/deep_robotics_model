@@ -60,7 +60,7 @@
     </joint>
     <link name="FL_THIGH">
         <inertial>
-            <origin xyz="-0.0052817 -0.014632 -0.042672"/>
+            <origin xyz="-0.0039245 -0.014632 -0.025146"/>
             <mass value="0.86"/>
             <inertia ixx="0.005736" ixy="0" ixz="0" iyy="0.004960" iyz="0" izz="0.001436"/>
         </inertial>
@@ -165,7 +165,7 @@
     </joint>
     <link name="FR_THIGH">
         <inertial>
-            <origin xyz="-0.0039245 0.025256 -0.025146"/>
+            <origin xyz="-0.0039245 0.014632 -0.025146"/>
             <mass value="0.86"/>
             <!-- inertia ixx="0.00433" ixy="0.00001" ixz="0.00034" iyy="0.00403"  iyz="-0.0000186" izz="0.00143" -->
             <inertia ixx="0.005736" ixy="0" ixz="0" iyy="0.004960" iyz="0" izz="0.001436"/>
@@ -268,7 +268,7 @@
     </joint>
     <link name="HL_THIGH">
         <inertial>
-            <origin xyz="-0.0057137 -0.014631 -0.042453"/>
+            <origin xyz="-0.0039245 -0.014632 -0.025146"/>
             <mass value="0.86"/>
             <inertia ixx="0.005736" ixy="0" ixz="0" iyy="0.004960" iyz="0" izz="0.001436"/>
         </inertial>
@@ -370,7 +370,7 @@
     </joint>
     <link name="HR_THIGH">
         <inertial>
-            <origin xyz="-0.0031903 0.02526 -0.025617"/>
+            <origin xyz="-0.0039245 0.014632 -0.025146"/>
             <mass value="0.86"/>
             <inertia ixx="0.005736" ixy="0" ixz="0" iyy="0.004960" iyz="0" izz="0.001436"/>
         </inertial>

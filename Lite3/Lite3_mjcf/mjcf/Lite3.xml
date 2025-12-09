@@ -58,7 +58,7 @@
         <geom name="FL_HIP_visual" pos="0 0 0" quat="1 0 0 0" material="" type="mesh" mesh="fl_hip.STL" class="visual" />
         <body name="FL_THIGH" pos="0 0.09735 0" quat="1.0 0.0 0.0 0.0">
           <joint name="FL_HipY_joint" type="hinge" ref="0.0" class="motor" range="-2.67 0.314" axis="0 -1 0" />
-          <inertial pos="-0.0052817 -0.014632 -0.042672" quat="1.0 0.0 0.0 0.0" mass="0.86" diaginertia="0.005736 0.00496 0.001436" />
+          <inertial pos="-0.0039245 -0.014632 -0.025146" quat="1.0 0.0 0.0 0.0" mass="0.86" diaginertia="0.005736 0.00496 0.001436" />
           <geom name="FL_THIGH_collision" pos="0 0 0" quat="1.0 0.0 0.0 0.0" type="mesh" mesh="fl_thigh.STL" class="collision" />
           <geom name="FL_THIGH_visual" pos="0 0 0" quat="1 0 0 0" material="" type="mesh" mesh="fl_thigh.STL" class="visual" />
           <body name="FL_SHANK" pos="0 0 -0.20" quat="1.0 0.0 0.0 0.0">
@@ -82,7 +82,7 @@
         <geom name="FR_HIP_visual" pos="0 0 0" quat="1 0 0 0" material="" type="mesh" mesh="fr_hip.STL" class="visual" />
         <body name="FR_THIGH" pos="0 -0.09735 0" quat="1.0 0.0 0.0 0.0">
           <joint name="FR_HipY_joint" type="hinge" ref="0.0" class="motor" range="-2.67 0.314" axis="0 -1 0" />
-          <inertial pos="-0.0039245 0.025256 -0.025146" quat="1.0 0.0 0.0 0.0" mass="0.86" diaginertia="0.005736 0.00496 0.001436" />
+          <inertial pos="-0.0039245 0.014632 -0.025146" quat="1.0 0.0 0.0 0.0" mass="0.86" diaginertia="0.005736 0.00496 0.001436" />
           <geom name="FR_THIGH_collision" pos="0 0 0" quat="1.0 0.0 0.0 0.0" type="mesh" mesh="fr_thigh.STL" class="collision" />
           <geom name="FR_THIGH_visual" pos="0 0 0" quat="1 0 0 0" material="" type="mesh" mesh="fr_thigh.STL" class="visual" />
           <body name="FR_SHANK" pos="0 0 -0.20" quat="1.0 0.0 0.0 0.0">
@@ -105,7 +105,7 @@
         <geom name="HL_HIP_visual" pos="0 0 0" quat="1 0 0 0" material="" type="mesh" mesh="hl_hip.STL" class="visual" />
         <body name="HL_THIGH" pos="0 0.09735 0" quat="1.0 0.0 0.0 0.0">
           <joint name="HL_HipY_joint" type="hinge" ref="0.0" class="motor" range="-2.67 0.314" axis="0 -1 0" />
-          <inertial pos="-0.0057137 -0.014631 -0.042453" quat="1.0 0.0 0.0 0.0" mass="0.86" diaginertia="0.005736 0.00496 0.001436" />
+          <inertial pos="-0.0039245 -0.014632 -0.025146" quat="1.0 0.0 0.0 0.0" mass="0.86" diaginertia="0.005736 0.00496 0.001436" />
           <geom name="HL_THIGH_collision" pos="0 0 0" quat="1.0 0.0 0.0 0.0" type="mesh" mesh="hl_thigh.STL" class="collision" />
           <geom name="HL_THIGH_visual" pos="0 0 0" quat="1 0 0 0" material="" type="mesh" mesh="hl_thigh.STL" class="visual" />
           <body name="HL_SHANK" pos="0 0 -0.20" quat="1.0 0.0 0.0 0.0">
@@ -128,7 +128,7 @@
         <geom name="HR_HIP_visual" pos="0 0 0" quat="1 0 0 0" material="" type="mesh" mesh="hr_hip.STL" class="visual" />
         <body name="HR_THIGH" pos="0 -0.09735 0" quat="1.0 0.0 0.0 0.0">
           <joint name="HR_HipY_joint" type="hinge" ref="0.0" class="motor" range="-2.67 0.314" axis="0 -1 0" />
-          <inertial pos="-0.0031903 0.02526 -0.025617" quat="1.0 0.0 0.0 0.0" mass="0.86" diaginertia="0.005736 0.00496 0.001436" />
+          <inertial pos="-0.0039245 0.014632 -0.025146" quat="1.0 0.0 0.0 0.0" mass="0.86" diaginertia="0.005736 0.00496 0.001436" />
           <geom name="HR_THIGH_collision" pos="0 0 0" quat="1.0 0.0 0.0 0.0" type="mesh" mesh="hr_thigh.STL" class="collision" />
           <geom name="HR_THIGH_visual" pos="0 0 0" quat="1 0 0 0" material="" type="mesh" mesh="hr_thigh.STL" class="visual" />
           <body name="HR_SHANK" pos="0 0 -0.20" quat="1.0 0.0 0.0 0.0">

@@ -1,0 +1,5 @@
+<mujoco model="S10_track">
+    <include file="./S10.xml"/>
+    <include file="./scene.xml"/>
+    <include file="./track_overlay.xml"/>
+</mujoco>

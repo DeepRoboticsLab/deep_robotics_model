@@ -1,0 +1,103 @@
+<mujoco model="track_overlay">
+  <worldbody>
+    <body name="track_overlay">
+      <geom name="track_segment_000" type="capsule" fromto="0.0000 -1.7250 0.0000 -0.7125 11.6550 0.4750" size="0.0700" rgba="0.05 0.95 0.08 1" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_segment_001" type="capsule" fromto="-0.7125 11.6550 0.4750 -8.7300 11.8425 0.4750" size="0.0700" rgba="0.05 0.95 0.08 1" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_segment_002" type="capsule" fromto="-8.7300 11.8425 0.4750 -10.5375 16.3275 0.4750" size="0.0700" rgba="0.05 0.95 0.08 1" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_segment_003" type="capsule" fromto="-10.5375 16.3275 0.4750 -15.0225 17.3700 0.4750" size="0.0700" rgba="0.05 0.95 0.08 1" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_segment_004" type="capsule" fromto="-15.0225 17.3700 0.4750 -15.6000 23.2800 0.4750" size="0.0700" rgba="0.05 0.95 0.08 1" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_segment_005" type="capsule" fromto="-15.6000 23.2800 0.4750 -15.1200 31.8600 0.6000" size="0.0700" rgba="0.05 0.95 0.08 1" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_segment_006" type="capsule" fromto="-15.1200 31.8600 0.6000 -14.9325 41.2050 1.1650" size="0.0700" rgba="0.05 0.95 0.08 1" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_segment_007" type="capsule" fromto="-14.9325 41.2050 1.1650 -20.4600 43.1100 1.1650" size="0.0700" rgba="0.05 0.95 0.08 1" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_segment_008" type="capsule" fromto="-20.4600 43.1100 1.1650 -20.6550 47.7825 1.1650" size="0.0700" rgba="0.05 0.95 0.08 1" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_segment_009" type="capsule" fromto="-20.6550 47.7825 1.1650 -4.0500 47.9700 1.1650" size="0.0700" rgba="0.05 0.95 0.08 1" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_segment_010" type="capsule" fromto="-4.0500 47.9700 1.1650 -4.2450 42.5400 1.1650" size="0.0700" rgba="0.05 0.95 0.08 1" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_segment_011" type="capsule" fromto="-4.2450 42.5400 1.1650 -13.5000 41.5500 1.1650" size="0.0700" rgba="0.05 0.95 0.08 1" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_segment_012" type="capsule" fromto="-13.5000 41.5500 1.1650 -12.9225 34.6275 0.4750" size="0.0700" rgba="0.05 0.95 0.08 1" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_segment_013" type="capsule" fromto="-12.9225 34.6275 0.4750 2.7225 34.5300 0.4750" size="0.0700" rgba="0.05 0.95 0.08 1" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_segment_014" type="capsule" fromto="2.7225 34.5300 0.4750 11.1225 33.0075 0.1000" size="0.0700" rgba="0.05 0.95 0.08 1" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_segment_015" type="capsule" fromto="11.1225 33.0075 0.1000 16.2750 31.2900 0.4750" size="0.0700" rgba="0.05 0.95 0.08 1" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_segment_016" type="capsule" fromto="16.2750 31.2900 0.4750 17.6100 29.1900 0.4750" size="0.0700" rgba="0.05 0.95 0.08 1" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_segment_017" type="capsule" fromto="17.6100 29.1900 0.4750 25.7175 29.9550 2.2000" size="0.0700" rgba="0.05 0.95 0.08 1" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_segment_018" type="capsule" fromto="25.7175 29.9550 2.2000 34.5975 29.9550 2.3600" size="0.0700" rgba="0.05 0.95 0.08 1" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_segment_019" type="capsule" fromto="34.5975 29.9550 2.3600 33.9225 24.4275 2.3600" size="0.0700" rgba="0.05 0.95 0.08 1" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_segment_020" type="capsule" fromto="33.9225 24.4275 2.3600 17.8950 24.6150 0.4750" size="0.0700" rgba="0.05 0.95 0.08 1" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_segment_021" type="capsule" fromto="17.8950 24.6150 0.4750 19.0425 16.8000 0.4750" size="0.0700" rgba="0.05 0.95 0.08 1" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_segment_022" type="capsule" fromto="19.0425 16.8000 0.4750 26.4825 17.1825 1.6700" size="0.0700" rgba="0.05 0.95 0.08 1" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_segment_023" type="capsule" fromto="26.4825 17.1825 1.6700 31.6350 15.4650 1.6700" size="0.0700" rgba="0.05 0.95 0.08 1" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_segment_024" type="capsule" fromto="31.6350 15.4650 1.6700 33.1650 15.1800 1.6700" size="0.0700" rgba="0.05 0.95 0.08 1" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_segment_025" type="capsule" fromto="33.1650 15.1800 1.6700 33.6000 21.3750 2.7000" size="0.0700" rgba="0.05 0.95 0.08 1" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_segment_026" type="capsule" fromto="33.6000 21.3750 2.7000 34.8825 21.3750 2.7000" size="0.0700" rgba="0.05 0.95 0.08 1" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_segment_027" type="capsule" fromto="34.8825 21.3750 2.7000 35.0700 15.6600 3.7500" size="0.0700" rgba="0.05 0.95 0.08 1" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_segment_028" type="capsule" fromto="35.0700 15.6600 3.7500 30.9350 14.7150 3.7500" size="0.0700" rgba="0.05 0.95 0.08 1" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_segment_029" type="capsule" fromto="30.9350 14.7150 3.7500 29.5350 16.3275 3.7500" size="0.0700" rgba="0.05 0.95 0.08 1" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_segment_030" type="capsule" fromto="29.5350 16.3275 3.7500 29.9175 20.6175 3.7500" size="0.0700" rgba="0.05 0.95 0.08 1" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_segment_031" type="capsule" fromto="29.9175 20.6175 3.7500 32.9250 18.4500 3.7500" size="0.0700" rgba="0.05 0.95 0.08 1" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_waypoint_000_start" type="sphere" pos="0.0000 -1.7250 0.0000" size="0.1418" rgba="0.050 0.180 1.000 1.000" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_height_post_001" type="capsule" fromto="-0.7125 11.6550 0.0000 -0.7125 11.6550 0.4750" size="0.0225" rgba="0.45 0.45 0.45 0.28" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_waypoint_001_waypoint" type="sphere" pos="-0.7125 11.6550 0.4750" size="0.1050" rgba="0.231 0.050 0.830 1.000" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_height_post_002" type="capsule" fromto="-8.7300 11.8425 0.0000 -8.7300 11.8425 0.4750" size="0.0225" rgba="0.45 0.45 0.45 0.28" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_waypoint_002_waypoint" type="sphere" pos="-8.7300 11.8425 0.4750" size="0.1050" rgba="0.231 0.050 0.830 1.000" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_height_post_003" type="capsule" fromto="-10.5375 16.3275 0.0000 -10.5375 16.3275 0.4750" size="0.0225" rgba="0.45 0.45 0.45 0.28" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_waypoint_003_waypoint" type="sphere" pos="-10.5375 16.3275 0.4750" size="0.1050" rgba="0.231 0.050 0.830 1.000" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_height_post_004" type="capsule" fromto="-15.0225 17.3700 0.0000 -15.0225 17.3700 0.4750" size="0.0225" rgba="0.45 0.45 0.45 0.28" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_waypoint_004_waypoint" type="sphere" pos="-15.0225 17.3700 0.4750" size="0.1050" rgba="0.231 0.050 0.830 1.000" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_height_post_005" type="capsule" fromto="-15.6000 23.2800 0.0000 -15.6000 23.2800 0.4750" size="0.0225" rgba="0.45 0.45 0.45 0.28" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_waypoint_005_waypoint" type="sphere" pos="-15.6000 23.2800 0.4750" size="0.1050" rgba="0.231 0.050 0.830 1.000" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_height_post_006" type="capsule" fromto="-15.1200 31.8600 0.0000 -15.1200 31.8600 0.6000" size="0.0225" rgba="0.45 0.45 0.45 0.28" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_waypoint_006_waypoint" type="sphere" pos="-15.1200 31.8600 0.6000" size="0.1050" rgba="0.261 0.050 0.798 1.000" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_height_post_007" type="capsule" fromto="-14.9325 41.2050 0.0000 -14.9325 41.2050 1.1650" size="0.0225" rgba="0.45 0.45 0.45 0.28" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_waypoint_007_waypoint" type="sphere" pos="-14.9325 41.2050 1.1650" size="0.1050" rgba="0.393 0.063 0.655 1.000" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_height_post_008" type="capsule" fromto="-20.4600 43.1100 0.0000 -20.4600 43.1100 1.1650" size="0.0225" rgba="0.45 0.45 0.45 0.28" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_waypoint_008_waypoint" type="sphere" pos="-20.4600 43.1100 1.1650" size="0.1050" rgba="0.393 0.063 0.655 1.000" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_height_post_009" type="capsule" fromto="-20.6550 47.7825 0.0000 -20.6550 47.7825 1.1650" size="0.0225" rgba="0.45 0.45 0.45 0.28" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_waypoint_009_waypoint" type="sphere" pos="-20.6550 47.7825 1.1650" size="0.1050" rgba="0.393 0.063 0.655 1.000" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_height_post_010" type="capsule" fromto="-4.0500 47.9700 0.0000 -4.0500 47.9700 1.1650" size="0.0225" rgba="0.45 0.45 0.45 0.28" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_waypoint_010_waypoint" type="sphere" pos="-4.0500 47.9700 1.1650" size="0.1050" rgba="0.393 0.063 0.655 1.000" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_height_post_011" type="capsule" fromto="-4.2450 42.5400 0.0000 -4.2450 42.5400 1.1650" size="0.0225" rgba="0.45 0.45 0.45 0.28" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_waypoint_011_waypoint" type="sphere" pos="-4.2450 42.5400 1.1650" size="0.1050" rgba="0.393 0.063 0.655 1.000" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_height_post_012" type="capsule" fromto="-13.5000 41.5500 0.0000 -13.5000 41.5500 1.1650" size="0.0225" rgba="0.45 0.45 0.45 0.28" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_waypoint_012_waypoint" type="sphere" pos="-13.5000 41.5500 1.1650" size="0.1050" rgba="0.393 0.063 0.655 1.000" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_height_post_013" type="capsule" fromto="-12.9225 34.6275 0.0000 -12.9225 34.6275 0.4750" size="0.0225" rgba="0.45 0.45 0.45 0.28" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_waypoint_013_waypoint" type="sphere" pos="-12.9225 34.6275 0.4750" size="0.1050" rgba="0.231 0.050 0.830 1.000" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_height_post_014" type="capsule" fromto="2.7225 34.5300 0.0000 2.7225 34.5300 0.4750" size="0.0225" rgba="0.45 0.45 0.45 0.28" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_waypoint_014_waypoint" type="sphere" pos="2.7225 34.5300 0.4750" size="0.1050" rgba="0.231 0.050 0.830 1.000" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_height_post_015" type="capsule" fromto="11.1225 33.0075 0.0000 11.1225 33.0075 0.1000" size="0.0225" rgba="0.45 0.45 0.45 0.28" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_waypoint_015_waypoint" type="sphere" pos="11.1225 33.0075 0.1000" size="0.1050" rgba="0.143 0.050 0.925 1.000" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_height_post_016" type="capsule" fromto="16.2750 31.2900 0.0000 16.2750 31.2900 0.4750" size="0.0225" rgba="0.45 0.45 0.45 0.28" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_waypoint_016_waypoint" type="sphere" pos="16.2750 31.2900 0.4750" size="0.1050" rgba="0.231 0.050 0.830 1.000" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_height_post_017" type="capsule" fromto="17.6100 29.1900 0.0000 17.6100 29.1900 0.4750" size="0.0225" rgba="0.45 0.45 0.45 0.28" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_waypoint_017_waypoint" type="sphere" pos="17.6100 29.1900 0.4750" size="0.1050" rgba="0.231 0.050 0.830 1.000" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_height_post_018" type="capsule" fromto="25.7175 29.9550 0.0000 25.7175 29.9550 2.2000" size="0.0225" rgba="0.45 0.45 0.45 0.28" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_waypoint_018_waypoint" type="sphere" pos="25.7175 29.9550 2.2000" size="0.1050" rgba="0.636 0.398 0.393 1.000" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_height_post_019" type="capsule" fromto="34.5975 29.9550 0.0000 34.5975 29.9550 2.3600" size="0.0225" rgba="0.45 0.45 0.45 0.28" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_waypoint_019_waypoint" type="sphere" pos="34.5975 29.9550 2.3600" size="0.1050" rgba="0.674 0.450 0.352 1.000" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_height_post_020" type="capsule" fromto="33.9225 24.4275 0.0000 33.9225 24.4275 2.3600" size="0.0225" rgba="0.45 0.45 0.45 0.28" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_waypoint_020_waypoint" type="sphere" pos="33.9225 24.4275 2.3600" size="0.1050" rgba="0.674 0.450 0.352 1.000" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_height_post_021" type="capsule" fromto="17.8950 24.6150 0.0000 17.8950 24.6150 0.4750" size="0.0225" rgba="0.45 0.45 0.45 0.28" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_waypoint_021_waypoint" type="sphere" pos="17.8950 24.6150 0.4750" size="0.1050" rgba="0.231 0.050 0.830 1.000" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_height_post_022" type="capsule" fromto="19.0425 16.8000 0.0000 19.0425 16.8000 0.4750" size="0.0225" rgba="0.45 0.45 0.45 0.28" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_waypoint_022_waypoint" type="sphere" pos="19.0425 16.8000 0.4750" size="0.1050" rgba="0.231 0.050 0.830 1.000" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_height_post_023" type="capsule" fromto="26.4825 17.1825 0.0000 26.4825 17.1825 1.6700" size="0.0225" rgba="0.45 0.45 0.45 0.28" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_waypoint_023_waypoint" type="sphere" pos="26.4825 17.1825 1.6700" size="0.1050" rgba="0.512 0.226 0.527 1.000" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_height_post_024" type="capsule" fromto="31.6350 15.4650 0.0000 31.6350 15.4650 1.6700" size="0.0225" rgba="0.45 0.45 0.45 0.28" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_waypoint_024_waypoint" type="sphere" pos="31.6350 15.4650 1.6700" size="0.1050" rgba="0.512 0.226 0.527 1.000" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_height_post_025" type="capsule" fromto="33.1650 15.1800 0.0000 33.1650 15.1800 1.6700" size="0.0225" rgba="0.45 0.45 0.45 0.28" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_waypoint_025_waypoint" type="sphere" pos="33.1650 15.1800 1.6700" size="0.1050" rgba="0.512 0.226 0.527 1.000" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_height_post_026" type="capsule" fromto="33.6000 21.3750 0.0000 33.6000 21.3750 2.7000" size="0.0225" rgba="0.45 0.45 0.45 0.28" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_waypoint_026_waypoint" type="sphere" pos="33.6000 21.3750 2.7000" size="0.1050" rgba="0.754 0.560 0.266 1.000" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_height_post_027" type="capsule" fromto="34.8825 21.3750 0.0000 34.8825 21.3750 2.7000" size="0.0225" rgba="0.45 0.45 0.45 0.28" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_waypoint_027_waypoint" type="sphere" pos="34.8825 21.3750 2.7000" size="0.1050" rgba="0.754 0.560 0.266 1.000" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_height_post_028" type="capsule" fromto="35.0700 15.6600 0.0000 35.0700 15.6600 3.7500" size="0.0225" rgba="0.45 0.45 0.45 0.28" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_waypoint_028_waypoint" type="sphere" pos="35.0700 15.6600 3.7500" size="0.1050" rgba="1.000 0.900 0.000 1.000" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_height_post_029" type="capsule" fromto="30.9350 14.7150 0.0000 30.9350 14.7150 3.7500" size="0.0225" rgba="0.45 0.45 0.45 0.28" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_waypoint_029_waypoint" type="sphere" pos="30.9350 14.7150 3.7500" size="0.1050" rgba="1.000 0.900 0.000 1.000" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_height_post_030" type="capsule" fromto="29.5350 16.3275 0.0000 29.5350 16.3275 3.7500" size="0.0225" rgba="0.45 0.45 0.45 0.28" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_waypoint_030_waypoint" type="sphere" pos="29.5350 16.3275 3.7500" size="0.1050" rgba="1.000 0.900 0.000 1.000" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_height_post_031" type="capsule" fromto="29.9175 20.6175 0.0000 29.9175 20.6175 3.7500" size="0.0225" rgba="0.45 0.45 0.45 0.28" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_waypoint_031_waypoint" type="sphere" pos="29.9175 20.6175 3.7500" size="0.1050" rgba="1.000 0.900 0.000 1.000" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_height_post_032" type="capsule" fromto="32.9250 18.4500 0.0000 32.9250 18.4500 3.7500" size="0.0225" rgba="0.45 0.45 0.45 0.28" contype="0" conaffinity="0" group="2"/>
+      <geom name="track_waypoint_032_end" type="sphere" pos="32.9250 18.4500 3.7500" size="0.1522" rgba="1.000 0.020 0.020 1.000" contype="0" conaffinity="0" group="2"/>
+    </body>
+  </worldbody>
+</mujoco>

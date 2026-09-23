@@ -17,7 +17,6 @@ High-resolution models are available on [Google Drive](https://drive.google.com/
 | **DR02 Standard** | <img src="./images/rendered/high_res/DR02-B2-STD.png" width="320" alt="High-resolution DR02 Standard render" /> | <img src="./images/rendered/low_res/DR02-standard.png" width="320" alt="Low-resolution DR02 Standard render" /> |
 | **S10** | — | — |
 
-S10 currently includes MJCF, URDF, and USD models. Its MJCF directory also contains an optional track scene (`S10_track.xml`) and the associated scene mesh assets; no rendered preview is included yet.
 
 ## Contributors
 

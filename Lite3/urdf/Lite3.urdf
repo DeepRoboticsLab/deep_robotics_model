@@ -31,6 +31,29 @@
         </collision>
     </link>
 
+    <!-- Physical sensor mounting frames in the TORSO/body coordinate system.
+         x: forward, y: left, z: up; negative pitch points the sensor downward. -->
+    <link name="D435I_LINK"/>
+    <joint name="D435I_FIXED" type="fixed" dont_collapse="true">
+        <parent link="TORSO"/>
+        <child link="D435I_LINK"/>
+        <origin xyz="0.25228 -0.00050 0.07410" rpy="0 -0.3490658504 0"/>
+    </joint>
+
+    <link name="MID360_LINK"/>
+    <joint name="MID360_FIXED" type="fixed" dont_collapse="true">
+        <parent link="TORSO"/>
+        <child link="MID360_LINK"/>
+        <origin xyz="0.18678 0 0.12498" rpy="0 -0.2617993878 0"/>
+    </joint>
+
+    <link name="IMU_LINK"/>
+    <joint name="IMU_FIXED" type="fixed" dont_collapse="true">
+        <parent link="TORSO"/>
+        <child link="IMU_LINK"/>
+        <origin xyz="0.005 0 0" rpy="0 0 0"/>
+    </joint>
+
     <!--!!!!!!!!!!!! Front Left Leg !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
 
     <link name="FL_HIP">

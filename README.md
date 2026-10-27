@@ -4,6 +4,8 @@ This repository contains 3D models for eight Deep Robotics robots: **Lite3**, **
 
 High-resolution models are available on [Google Drive](https://drive.google.com/drive/folders/1EOELXUYSBPEJeD0rUIkJxnlLMDr6IHBV?usp=sharing) and are intended for use with modern simulators such as Isaac Lab and Isaac Sim. The low-resolution models bundled in this repository are provided for broad compatibility with older simulators.
 
+Lite3 sensor frames were corrected on 2026-10-27: the D435i and MID360 mounting frames tilt downward by 20° and 15°, respectively. The URDF and USD define mounting frames; the USD also supplies optical frame transforms without active camera or lidar prims. The MJCF aligns its camera and single-ray rangefinder axes with these mounts.
+
 ## Model Overview
 
 | Robot Model | High-Resolution Render | Low-Resolution Render |

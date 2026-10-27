@@ -48,8 +48,11 @@
     <body name="TORSO" pos="0 0. 1." quat="1 0 0 0" childclass="robot">
       <freejoint name="floating_base" />
       <site name="imu_site" pos="0.005 0 0" size="0.005" rgba="1 0 0 1"/>
-      <site name="depth_camera_site" pos="0.25228 -0.00050 0.07410" euler="0 -0.3490658504 0" size="0.01" rgba="0 1 0 1"/>
-      <site name="lidar_site" pos="0.18678 0 0.12498" euler="0 -0.2617993878 0" size="0.01" rgba="0 0 1 1"/>
+      <!-- Optical frame: +X right, +Y up, -Z forward; identical to depth_camera. -->
+      <site name="depth_camera_site" pos="0.25228 -0.00050 0.07410" xyaxes="0 -1 0 0.3420201433256687 0 0.9396926207859084" size="0.01" rgba="0 1 0 1"/>
+      <site name="lidar_site" pos="0.18678 0 0.12498" euler="0 0.2617993878 0" size="0.01" rgba="0 0 1 1"/>
+      <!-- Mount frames use +X forward; rangefinder rays use +Z. This is one beam, not a MID360 scan. -->
+      <site name="lidar_range_site" pos="0.18678 0 0.12498" xyaxes="0 -1 0 -0.25881904510252074 0 -0.9659258262890683" size="0.003" rgba="0 0 1 0"/>
       <inertial pos="0 0 0" mass="5.6056" diaginertia="0.02456 0.05518 0.07016"/>
       <geom name="TORSO_collision" pos="0 0 0" quat="1.0 0.0 0.0 0.0" type="mesh" mesh="torso.STL" class="collision" />
       <geom name="TORSO_visual" pos="0 0 0" quat="1 0 0 0" material="" type="mesh" mesh="torso.STL" class="visual" />
@@ -147,7 +150,7 @@
         </body>
       </body>
       <site name="TORSO_site" pos="0 0 0" quat="1 0 0 0" />
-      <camera name="depth_camera" mode="fixed" fovy="58.0" pos="0.25228 -0.00050 0.07410" euler="0 -0.3490658504 0" />
+      <camera name="depth_camera" mode="fixed" fovy="58.0" pos="0.25228 -0.00050 0.07410" xyaxes="0 -1 0 0.3420201433256687 0 0.9396926207859084" />
       <camera name="front_camera" mode="track" fovy="90.0" quat="4.329780281177467e-17 4.329780281177466e-17 0.7071067811865475 0.7071067811865476" pos="0.0 2.0 0.5" />
       <camera name="side_camera" mode="track" fovy="90.0" quat="-0.5 -0.4999999999999999 0.5 0.5000000000000001" pos="-2.0 0.0 0.5" />
     </body>
@@ -195,6 +198,6 @@
     <velocimeter name="TORSO_site_vel" site="TORSO_site" />
     <accelerometer name="imu_acc" site="imu_site"/>
     <gyro          name="imu_gyro" site="imu_site"/>
-    <rangefinder   name="lidar_range" site="lidar_site"/>
+    <rangefinder   name="lidar_range" site="lidar_range_site"/>
   </sensor>
 </mujoco>

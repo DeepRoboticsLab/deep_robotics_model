@@ -87,7 +87,7 @@
         <collision>
             <origin xyz="-0.01 0.11 -0.125" rpy="0 0 0"/>
             <geometry>
-                <box size="0.07 0.02 0.25"/>
+                <box size="0.08 0.035 0.26"/>
             </geometry>
         </collision>
         <collision>
@@ -102,13 +102,13 @@
         <parent link="fl_hipx"/>
         <child link="fl_hipy"/>
         <axis xyz="0 -1 0"/>
-        <limit lower="-2.583" upper="2.286" effort="140" velocity="20.4"/>
+        <limit lower="-2.286" upper="2.583" effort="140" velocity="20.4"/>
     </joint>
     <link name="fl_knee">
         <inertial>
             <origin xyz="0.00341916513259743 0.0026912421076368 -0.181265498605881" rpy="0 0 0"/>
             <mass value="1.26"/>
-            <inertia ixx="0.012936" ixy="-0.000053" ixz="0.000226" iyy="0.013123" iyz="-0.001681" izz="0.001682"/>
+            <inertia ixx="0.012936" ixy="-0.000053" ixz="0.000226" iyy="0.013123" iyz="-0.001681" izz="0.001283"/>
         </inertial>
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -120,9 +120,9 @@
             </material>
         </visual>
         <collision>
-            <origin xyz="0.015 -0.015 -0.125" rpy="0 0 0"/>
+            <origin xyz="0.015 -0.015 -0.135" rpy="0 0 0"/>
             <geometry>
-                <box size="0.06 0.025 0.25"/>
+                <box size="0.07 0.035 0.27"/>
             </geometry>
         </collision>
         <collision>
@@ -137,7 +137,7 @@
         <parent link="fl_hipy"/>
         <child link="fl_knee"/>
         <axis xyz="0 -1 0"/>
-        <limit lower="-2.792" upper="2.809" effort="140" velocity="20.4"/>
+        <limit lower="-2.810" upper="2.793" effort="140" velocity="20.4"/>
     </joint>
     <link name="fl_wheel">
         <inertial>
@@ -215,7 +215,7 @@
         <collision>
             <origin xyz="-0.01 -0.11 -0.125" rpy="0 0 0"/>
             <geometry>
-                <box size="0.07 0.02 0.25"/>
+                <box size="0.08 0.035 0.26"/>
             </geometry>
         </collision>
         <collision>
@@ -230,7 +230,7 @@
         <parent link="fr_hipx"/>
         <child link="fr_hipy"/>
         <axis xyz="0 -1 0"/>
-        <limit lower="-2.583" upper="2.286" effort="140" velocity="20.4"/>
+        <limit lower="-2.286" upper="2.583" effort="140" velocity="20.4"/>
     </joint>
     <link name="fr_knee">
         <inertial>
@@ -248,9 +248,9 @@
             </material>
         </visual>
         <collision>
-            <origin xyz="0.015 0.015 -0.125" rpy="0 0 0"/>
+            <origin xyz="0.015 0.015 -0.135" rpy="0 0 0"/>
             <geometry>
-                <box size="0.06 0.025 0.25"/>
+                <box size="0.07 0.035 0.27"/>
             </geometry>
         </collision>
         <collision>
@@ -265,7 +265,7 @@
         <parent link="fr_hipy"/>
         <child link="fr_knee"/>
         <axis xyz="0 -1 0"/>
-        <limit lower="-2.792" upper="2.809" effort="140" velocity="20.4"/>
+        <limit lower="-2.810" upper="2.793" effort="140" velocity="20.4"/>
     </joint>
     <link name="fr_wheel">
         <inertial>
@@ -343,7 +343,7 @@
         <collision>
             <origin xyz="0.01 0.11 -0.125" rpy="0 0 0"/>
             <geometry>
-                <box size="0.07 0.02 0.25"/>
+                <box size="0.08 0.035 0.26"/>
             </geometry>
         </collision>
         <collision>
@@ -358,7 +358,7 @@
         <parent link="hl_hipx"/>
         <child link="hl_hipy"/>
         <axis xyz="0 -1 0"/>
-        <limit lower="-2.286" upper="2.583" effort="140" velocity="20.4"/>
+        <limit lower="-2.583" upper="2.286" effort="140" velocity="20.4"/>
     </joint>
     <link name="hl_knee">
         <inertial>
@@ -376,9 +376,9 @@
             </material>
         </visual>
         <collision>
-            <origin xyz="-0.015 0.015 -0.125" rpy="0 0 0"/>
+            <origin xyz="-0.015 -0.015 -0.135" rpy="0 0 0"/>
             <geometry>
-                <box size="0.06 0.025 0.25"/>
+                <box size="0.07 0.035 0.27"/>
             </geometry>
         </collision>
         <collision>
@@ -393,7 +393,7 @@
         <parent link="hl_hipy"/>
         <child link="hl_knee"/>
         <axis xyz="0 -1 0"/>
-        <limit lower="-2.809" upper="2.792" effort="140" velocity="20.4"/>
+        <limit lower="-2.793" upper="2.810" effort="140" velocity="20.4"/>
     </joint>
     <link name="hl_wheel">
         <inertial>
@@ -471,7 +471,7 @@
         <collision>
             <origin xyz="0.01 -0.11 -0.125" rpy="0 0 0"/>
             <geometry>
-                <box size="0.07 0.02 0.25"/>
+                <box size="0.08 0.035 0.26"/>
             </geometry>
         </collision>
         <collision>
@@ -486,7 +486,7 @@
         <parent link="hr_hipx"/>
         <child link="hr_hipy"/>
         <axis xyz="0 -1 0"/>
-        <limit lower="-2.286" upper="2.583" effort="140" velocity="20.4"/>
+        <limit lower="-2.583" upper="2.286" effort="140" velocity="20.4"/>
     </joint>
     <link name="hr_knee">
         <inertial>
@@ -504,9 +504,9 @@
             </material>
         </visual>
         <collision>
-            <origin xyz="-0.015 0.015 -0.125" rpy="0 0 0"/>
+            <origin xyz="-0.015 0.015 -0.135" rpy="0 0 0"/>
             <geometry>
-                <box size="0.06 0.025 0.25"/>
+                <box size="0.07 0.035 0.27"/>
             </geometry>
         </collision>
         <collision>
@@ -521,7 +521,7 @@
         <parent link="hr_hipy"/>
         <child link="hr_knee"/>
         <axis xyz="0 -1 0"/>
-        <limit lower="-2.809" upper="2.792" effort="140" velocity="20.4"/>
+        <limit lower="-2.793" upper="2.810" effort="140" velocity="20.4"/>
     </joint>
     <link name="hr_wheel">
         <inertial>
@@ -552,7 +552,6 @@
         <axis xyz="0 -1 0"/>
         <limit effort="28.5" velocity="104.45"/>
     </joint>
-
     <!-- CA9B sensor frames. Translations are converted from millimeters to meters.
          The source document specifies no additional rotation for these sensors. -->
     <link name="front_camera_link"/>

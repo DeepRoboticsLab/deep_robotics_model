@@ -4,7 +4,7 @@ This repository contains 3D models for eight Deep Robotics robots: **Lite3**, **
 
 High-resolution models are available on [Google Drive](https://drive.google.com/drive/folders/1EOELXUYSBPEJeD0rUIkJxnlLMDr6IHBV?usp=sharing) and are intended for use with modern simulators such as Isaac Lab and Isaac Sim. The low-resolution models bundled in this repository are provided for broad compatibility with older simulators.
 
-The low- and high-resolution M20S URDFs use the CA9C physics and sensor frames. They share the same inertial properties, collision geometry, joint limits, and front and rear camera and lidar mounts. The low-resolution model uses STL visuals and the high-resolution model uses DAE visuals.
+The low- and high-resolution M20S URDFs share the same inertial properties, collision geometry, joint limits, and front and rear camera and lidar mounts. The low-resolution model uses STL visuals and the high-resolution model uses DAE visuals.
 
 Lite3 sensor frames were corrected on 2026-10-27: the D435i and MID360 mounting frames tilt downward by 20° and 15°, respectively. The URDF and USD define mounting frames; the USD also supplies optical frame transforms without active camera or lidar prims. The MJCF aligns its camera and single-ray rangefinder axes with these mounts.
 

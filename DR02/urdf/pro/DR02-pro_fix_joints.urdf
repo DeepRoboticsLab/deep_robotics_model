@@ -365,9 +365,9 @@
       </material> 
     </visual>  
     <collision> 
-      <origin xyz="0 0 0" rpy="0 0 0"/>  
+      <origin xyz="0.0204 -0.0113 -0.08025" rpy="0 0 0"/>
       <geometry> 
-        <mesh filename="./meshes/left_hand_link.STL"/> 
+        <box size="0.1148 0.0802 0.1847"/>
       </geometry> 
     </collision> 
   </link>  
@@ -612,9 +612,9 @@
       </material> 
     </visual>  
     <collision> 
-      <origin xyz="0 0 0" rpy="0 0 0"/>  
+      <origin xyz="0.0204 0.0115 -0.0803" rpy="0 0 0"/>
       <geometry> 
-        <mesh filename="./meshes/right_hand_link.STL"/> 
+        <box size="0.1148 0.0806 0.1848"/>
       </geometry> 
     </collision> 
   </link>  

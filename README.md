@@ -8,6 +8,8 @@ The M20S MJCF and USD use the URDF’s link masses and inertia tensors, collisio
 
 Lite3 sensor frames were corrected on 2026-10-27: the D435i and MID360 mounting frames tilt downward by 20° and 15°, respectively. The URDF and USD define mounting frames; the USD also supplies optical frame transforms without active camera or lidar prims. The MJCF aligns its camera and single-ray rangefinder axes with these mounts.
 
+Each high-resolution URDF matches its low-resolution counterpart in all model fields except the visual mesh references and mesh directory. DR02 Pro uses one box per hand for collision in URDF, MJCF, and USD. Each box encloses both visual mesh resolutions.
+
 ## Model Overview
 
 | Robot Model | High-Resolution Render | Low-Resolution Render |

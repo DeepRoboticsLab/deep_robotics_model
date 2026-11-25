@@ -1,0 +1,12 @@
+#usda 1.0
+(
+    defaultPrim = "S10_Piper"
+    metersPerUnit = 1
+    upAxis = "Z"
+    subLayers = [
+        @configuration/S10_Piper_base.usd@,
+        @configuration/S10_Piper_robot.usd@,
+        @configuration/S10_Piper_physics.usd@,
+        @configuration/S10_Piper_sensor.usd@
+    ]
+)

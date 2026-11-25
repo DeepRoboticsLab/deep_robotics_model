@@ -12,14 +12,14 @@ Lite3 sensor frames were corrected on 2026-10-27: the D435i and MID360 mounting 
 
 | Robot Model | High-Resolution Render | Low-Resolution Render |
 |:-----------:|:----------------------:|:---------------------:|
-| **Lite3** | <img src="./images/rendered/high_res/LITE3-H.png" width="320" alt="High-resolution Lite3 render" /> | <img src="./images/rendered/low_res/LITE3.png" width="320" alt="Low-resolution Lite3 render" /> |
-| **M20** | <img src="./images/rendered/high_res/M20-H.png" width="320" alt="High-resolution M20 render" /> | <img src="./images/rendered/low_res/M20.png" width="320" alt="Low-resolution M20 render" /> |
-| **M20S** | <img src="./images/rendered/high_res/M20S-H.png" width="320" alt="High-resolution M20S render" /> | <img src="./images/rendered/low_res/M20S.png" width="320" alt="Low-resolution M20S render" /> |
-| **M20_Piper** | — | <img src="./images/rendered/low_res/M20P.png" width="320" alt="Low-resolution M20 Piper render" /> |
-| **X30** | <img src="./images/rendered/high_res/X30-H.png" width="320" alt="High-resolution X30 render" /> | <img src="./images/rendered/low_res/X30.png" width="320" alt="Low-resolution X30 render" /> |
+| **Lite3** | <img src="./images/rendered/high_res/LITE3-H-stance.png" width="320" alt="High-resolution Lite3 render" /> | <img src="./images/rendered/low_res/LITE3-stance.png" width="320" alt="Low-resolution Lite3 render" /> |
+| **M20** | <img src="./images/rendered/high_res/M20-H-stance.png" width="320" alt="High-resolution M20 render" /> | <img src="./images/rendered/low_res/M20-stance.png" width="320" alt="Low-resolution M20 render" /> |
+| **M20S** | <img src="./images/rendered/high_res/M20S-H-stance.png" width="320" alt="High-resolution M20S render" /> | <img src="./images/rendered/low_res/M20S-stance.png" width="320" alt="Low-resolution M20S render" /> |
+| **M20_Piper** | — | <img src="./images/rendered/low_res/M20P-stance.png" width="320" alt="Low-resolution M20 Piper render" /> |
+| **X30** | <img src="./images/rendered/high_res/X30-H-stance.png" width="320" alt="High-resolution X30 render" /> | <img src="./images/rendered/low_res/X30-stance.png" width="320" alt="Low-resolution X30 render" /> |
 | **DR02 Pro** | <img src="./images/rendered/high_res/DR02P-H.png" width="320" alt="High-resolution DR02 Pro render" /> | <img src="./images/rendered/low_res/DR02P.png" width="320" alt="Low-resolution DR02 Pro render" /> |
 | **DR02 Standard** | <img src="./images/rendered/high_res/DR02D-H.png" width="320" alt="High-resolution DR02 Standard render" /> | <img src="./images/rendered/low_res/DR02D.png" width="320" alt="Low-resolution DR02 Standard render" /> |
-| **S10** | <img src="./images/rendered/high_res/S10-H.png" width="320" alt="High-resolution S10 render" /> | <img src="./images/rendered/low_res/S10.png" width="320" alt="Low-resolution S10 render" /> |
+| **S10** | <img src="./images/rendered/high_res/S10-H-stance.png" width="320" alt="High-resolution S10 render" /> | <img src="./images/rendered/low_res/S10-stance.png" width="320" alt="Low-resolution S10 render" /> |
 
 
 ## Contributors

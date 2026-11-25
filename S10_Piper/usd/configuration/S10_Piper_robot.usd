@@ -1,0 +1,9 @@
+#usda 1.0
+
+over Xform "S10_Piper" (
+    prepend apiSchemas = ["PhysicsArticulationRootAPI"]
+)
+{
+    custom string robot:modelName = "S10_Piper"
+    custom string robot:sourceDescription = "S10 quadruped-wheeled base with Piper arm"
+}

@@ -1,0 +1,23 @@
+#usda 1.0
+
+over Xform "S10_Piper"
+{
+    over Scope "Links"
+    {
+        over Xform "imu_link"
+        {
+            custom string sensor:type = "IMU"
+            custom string sensor:description = "IMU frame from source URDF; sensor simulation must be configured by the target simulator."
+        }
+        over Xform "front_lidar_link"
+        {
+            custom string sensor:type = "LidarFrame"
+            custom string sensor:description = "Front lidar mounting frame from source URDF; no lidar scan plugin is defined."
+        }
+        over Xform "back_lidar_link"
+        {
+            custom string sensor:type = "LidarFrame"
+            custom string sensor:description = "Rear lidar mounting frame from source URDF; no lidar scan plugin is defined."
+        }
+    }
+}

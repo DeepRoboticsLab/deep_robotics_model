@@ -1,0 +1,980 @@
+#usda 1.0
+
+over Xform "S10_Piper"
+{
+    def PhysicsScene "PhysicsScene"
+    {
+        vector3f physics:gravityDirection = (0, 0, -1)
+        float physics:gravityMagnitude = 9.81
+    }
+
+    over Scope "Links"
+    {
+        over Xform "base_link" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            bool physics:rigidBodyEnabled = true
+            float physics:mass = 8.023087
+            point3f physics:centerOfMass = (-0.000512, 0.057317, 0.001182)
+            float3 physics:diagonalInertia = (0.115558374, 0.171324914, 0.262032712)
+            quatf physics:principalAxes = (0.999992256, 0.00358194165, -0.000308596581, 0.00160059488)
+            over Scope "Collisions"
+            {
+                over Xform "base_link_collision_0"
+                {
+                    over Cylinder "Shape" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI"]
+                    )
+                    {
+                        bool physics:collisionEnabled = true
+                    }
+                }
+                over Xform "base_link_collision_1"
+                {
+                    over Cylinder "Shape" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI"]
+                    )
+                    {
+                        bool physics:collisionEnabled = true
+                    }
+                }
+                over Xform "base_link_collision_2"
+                {
+                    over Cube "Shape" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI"]
+                    )
+                    {
+                        bool physics:collisionEnabled = true
+                    }
+                }
+            }
+        }
+        over Xform "fl_hipx" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            bool physics:rigidBodyEnabled = true
+            float physics:mass = 0.627405
+            point3f physics:centerOfMass = (-0.005034, 0.023524, 4.6e-05)
+            float3 physics:diagonalInertia = (0.000223220989, 0.000391723231, 0.00041505578)
+            quatf physics:principalAxes = (0.939329225, -0.0197188938, 0.00149265542, -0.342446411)
+            over Scope "Collisions"
+            {
+                over Xform "fl_hipx_collision_0"
+                {
+                    over Cylinder "Shape" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI"]
+                    )
+                    {
+                        bool physics:collisionEnabled = true
+                    }
+                }
+            }
+        }
+        over Xform "fl_hipy" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            bool physics:rigidBodyEnabled = true
+            float physics:mass = 0.885874
+            point3f physics:centerOfMass = (7.4e-05, 0.018439, -0.129675)
+            float3 physics:diagonalInertia = (0.00030514967, 0.00445198899, 0.00454086134)
+            quatf physics:principalAxes = (0.532411182, 0.465355559, -0.459382726, 0.537540741)
+            over Scope "Collisions"
+            {
+                over Xform "fl_hipy_collision_0"
+                {
+                    over Cube "Shape" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI"]
+                    )
+                    {
+                        bool physics:collisionEnabled = true
+                    }
+                }
+                over Xform "fl_hipy_collision_1"
+                {
+                    over Cylinder "Shape" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI"]
+                    )
+                    {
+                        bool physics:collisionEnabled = true
+                    }
+                }
+            }
+        }
+        over Xform "fl_knee" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            bool physics:rigidBodyEnabled = true
+            float physics:mass = 0.640283
+            point3f physics:centerOfMass = (-3.2e-05, 0.013504, -0.156308)
+            float3 physics:diagonalInertia = (0.000193398212, 0.002221, 0.00222960179)
+            quatf physics:principalAxes = (-0.546051357, -0.449252618, -0.449252618, 0.546051357)
+            over Scope "Collisions"
+            {
+                over Xform "fl_knee_collision_0"
+                {
+                    over Cube "Shape" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI"]
+                    )
+                    {
+                        bool physics:collisionEnabled = true
+                    }
+                }
+                over Xform "fl_knee_collision_1"
+                {
+                    over Cylinder "Shape" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI"]
+                    )
+                    {
+                        bool physics:collisionEnabled = true
+                    }
+                }
+            }
+        }
+        over Xform "fl_wheel" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            bool physics:rigidBodyEnabled = true
+            float physics:mass = 0.587952
+            point3f physics:centerOfMass = (-8e-06, 0.001694, -5e-06)
+            float3 physics:diagonalInertia = (0.001059, 0.001059, 0.002003)
+            quatf physics:principalAxes = (0.707106781, 0.707106781, 0, 0)
+            over Scope "Collisions"
+            {
+                over Xform "fl_wheel_collision_0"
+                {
+                    over Cylinder "Shape" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI"]
+                    )
+                    {
+                        bool physics:collisionEnabled = true
+                    }
+                }
+            }
+        }
+        over Xform "fr_hipx" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            bool physics:rigidBodyEnabled = true
+            float physics:mass = 0.626546
+            point3f physics:centerOfMass = (-0.004831, -0.02349, 0.000169)
+            float3 physics:diagonalInertia = (0.000218714969, 0.000395046809, 0.000415238222)
+            quatf physics:principalAxes = (0.937953897, 0.0513983858, 0.0173455873, 0.342490618)
+            over Scope "Collisions"
+            {
+                over Xform "fr_hipx_collision_0"
+                {
+                    over Cylinder "Shape" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI"]
+                    )
+                    {
+                        bool physics:collisionEnabled = true
+                    }
+                }
+            }
+        }
+        over Xform "fr_hipy" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            bool physics:rigidBodyEnabled = true
+            float physics:mass = 0.885874
+            point3f physics:centerOfMass = (-7.4e-05, -0.018439, -0.129675)
+            float3 physics:diagonalInertia = (0.00030514967, 0.00445198899, 0.00454086134)
+            quatf physics:principalAxes = (0.459382726, 0.537540741, -0.532411182, 0.465355559)
+            over Scope "Collisions"
+            {
+                over Xform "fr_hipy_collision_0"
+                {
+                    over Cube "Shape" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI"]
+                    )
+                    {
+                        bool physics:collisionEnabled = true
+                    }
+                }
+                over Xform "fr_hipy_collision_1"
+                {
+                    over Cylinder "Shape" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI"]
+                    )
+                    {
+                        bool physics:collisionEnabled = true
+                    }
+                }
+            }
+        }
+        over Xform "fr_knee" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            bool physics:rigidBodyEnabled = true
+            float physics:mass = 0.640283
+            point3f physics:centerOfMass = (3.2e-05, -0.013504, -0.156308)
+            float3 physics:diagonalInertia = (0.000193398212, 0.002221, 0.00222960179)
+            quatf physics:principalAxes = (0.449252618, 0.546051357, 0.546051357, -0.449252618)
+            over Scope "Collisions"
+            {
+                over Xform "fr_knee_collision_0"
+                {
+                    over Cube "Shape" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI"]
+                    )
+                    {
+                        bool physics:collisionEnabled = true
+                    }
+                }
+                over Xform "fr_knee_collision_1"
+                {
+                    over Cylinder "Shape" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI"]
+                    )
+                    {
+                        bool physics:collisionEnabled = true
+                    }
+                }
+            }
+        }
+        over Xform "fr_wheel" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            bool physics:rigidBodyEnabled = true
+            float physics:mass = 0.587952
+            point3f physics:centerOfMass = (8e-06, -0.001694, 5e-06)
+            float3 physics:diagonalInertia = (0.001059, 0.001059, 0.002003)
+            quatf physics:principalAxes = (0.707106781, 0.707106781, 0, 0)
+            over Scope "Collisions"
+            {
+                over Xform "fr_wheel_collision_0"
+                {
+                    over Cylinder "Shape" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI"]
+                    )
+                    {
+                        bool physics:collisionEnabled = true
+                    }
+                }
+            }
+        }
+        over Xform "hl_hipx" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            bool physics:rigidBodyEnabled = true
+            float physics:mass = 0.626546
+            point3f physics:centerOfMass = (0.004831, 0.02349, 0.000169)
+            float3 physics:diagonalInertia = (0.000218714969, 0.000395046809, 0.000415238222)
+            quatf physics:principalAxes = (0.937953897, -0.0513983858, -0.0173455873, 0.342490618)
+            over Scope "Collisions"
+            {
+                over Xform "hl_hipx_collision_0"
+                {
+                    over Cylinder "Shape" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI"]
+                    )
+                    {
+                        bool physics:collisionEnabled = true
+                    }
+                }
+            }
+        }
+        over Xform "hl_hipy" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            bool physics:rigidBodyEnabled = true
+            float physics:mass = 0.885874
+            point3f physics:centerOfMass = (7.4e-05, 0.018439, -0.129675)
+            float3 physics:diagonalInertia = (0.00030514967, 0.00445198899, 0.00454086134)
+            quatf physics:principalAxes = (0.532411182, 0.465355559, -0.459382726, 0.537540741)
+            over Scope "Collisions"
+            {
+                over Xform "hl_hipy_collision_0"
+                {
+                    over Cube "Shape" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI"]
+                    )
+                    {
+                        bool physics:collisionEnabled = true
+                    }
+                }
+                over Xform "hl_hipy_collision_1"
+                {
+                    over Cylinder "Shape" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI"]
+                    )
+                    {
+                        bool physics:collisionEnabled = true
+                    }
+                }
+            }
+        }
+        over Xform "hl_knee" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            bool physics:rigidBodyEnabled = true
+            float physics:mass = 0.640283
+            point3f physics:centerOfMass = (-3.2e-05, 0.013504, -0.156308)
+            float3 physics:diagonalInertia = (0.000193398212, 0.002221, 0.00222960179)
+            quatf physics:principalAxes = (-0.546051357, -0.449252618, -0.449252618, 0.546051357)
+            over Scope "Collisions"
+            {
+                over Xform "hl_knee_collision_0"
+                {
+                    over Cube "Shape" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI"]
+                    )
+                    {
+                        bool physics:collisionEnabled = true
+                    }
+                }
+                over Xform "hl_knee_collision_1"
+                {
+                    over Cylinder "Shape" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI"]
+                    )
+                    {
+                        bool physics:collisionEnabled = true
+                    }
+                }
+            }
+        }
+        over Xform "hl_wheel" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            bool physics:rigidBodyEnabled = true
+            float physics:mass = 0.587952
+            point3f physics:centerOfMass = (-8e-06, 0.001694, -5e-06)
+            float3 physics:diagonalInertia = (0.001059, 0.001059, 0.002003)
+            quatf physics:principalAxes = (0.707106781, 0.707106781, 0, 0)
+            over Scope "Collisions"
+            {
+                over Xform "hl_wheel_collision_0"
+                {
+                    over Cylinder "Shape" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI"]
+                    )
+                    {
+                        bool physics:collisionEnabled = true
+                    }
+                }
+            }
+        }
+        over Xform "hr_hipx" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            bool physics:rigidBodyEnabled = true
+            float physics:mass = 0.627405
+            point3f physics:centerOfMass = (0.005034, -0.023524, 4.6e-05)
+            float3 physics:diagonalInertia = (0.000223220989, 0.000391723231, 0.00041505578)
+            quatf physics:principalAxes = (0.939329225, 0.0197188938, -0.00149265542, -0.342446411)
+            over Scope "Collisions"
+            {
+                over Xform "hr_hipx_collision_0"
+                {
+                    over Cylinder "Shape" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI"]
+                    )
+                    {
+                        bool physics:collisionEnabled = true
+                    }
+                }
+            }
+        }
+        over Xform "hr_hipy" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            bool physics:rigidBodyEnabled = true
+            float physics:mass = 0.885874
+            point3f physics:centerOfMass = (-7.4e-05, -0.018439, -0.129675)
+            float3 physics:diagonalInertia = (0.00030514967, 0.00445198899, 0.00454086134)
+            quatf physics:principalAxes = (0.459382726, 0.537540741, -0.532411182, 0.465355559)
+            over Scope "Collisions"
+            {
+                over Xform "hr_hipy_collision_0"
+                {
+                    over Cube "Shape" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI"]
+                    )
+                    {
+                        bool physics:collisionEnabled = true
+                    }
+                }
+                over Xform "hr_hipy_collision_1"
+                {
+                    over Cylinder "Shape" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI"]
+                    )
+                    {
+                        bool physics:collisionEnabled = true
+                    }
+                }
+            }
+        }
+        over Xform "hr_knee" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            bool physics:rigidBodyEnabled = true
+            float physics:mass = 0.640283
+            point3f physics:centerOfMass = (3.2e-05, -0.013504, -0.156308)
+            float3 physics:diagonalInertia = (0.000193398212, 0.002221, 0.00222960179)
+            quatf physics:principalAxes = (0.449252618, 0.546051357, 0.546051357, -0.449252618)
+            over Scope "Collisions"
+            {
+                over Xform "hr_knee_collision_0"
+                {
+                    over Cube "Shape" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI"]
+                    )
+                    {
+                        bool physics:collisionEnabled = true
+                    }
+                }
+                over Xform "hr_knee_collision_1"
+                {
+                    over Cylinder "Shape" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI"]
+                    )
+                    {
+                        bool physics:collisionEnabled = true
+                    }
+                }
+            }
+        }
+        over Xform "hr_wheel" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            bool physics:rigidBodyEnabled = true
+            float physics:mass = 0.587952
+            point3f physics:centerOfMass = (8e-06, -0.001694, 5e-06)
+            float3 physics:diagonalInertia = (0.001059, 0.001059, 0.002003)
+            quatf physics:principalAxes = (0.707106781, 0.707106781, 0, 0)
+            over Scope "Collisions"
+            {
+                over Xform "hr_wheel_collision_0"
+                {
+                    over Cylinder "Shape" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI"]
+                    )
+                    {
+                        bool physics:collisionEnabled = true
+                    }
+                }
+            }
+        }
+        over Xform "piper_base_link" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            bool physics:rigidBodyEnabled = true
+            float physics:mass = 1.02
+            point3f physics:centerOfMass = (-0.004736412, 2.568291e-05, 0.04145152)
+            float3 physics:diagonalInertia = (0.000879393812, 0.00269117179, 0.00282612439)
+            quatf physics:principalAxes = (0.525074017, -0.522025449, -0.476583966, -0.473977248)
+            over Scope "Visuals"
+            {
+                over Mesh "piper_base_link_visual_0" (
+                    prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+                )
+                {
+                    bool physics:collisionEnabled = true
+                    token physics:approximation = "convexHull"
+                }
+            }
+        }
+        over Xform "link1" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            bool physics:rigidBodyEnabled = true
+            float physics:mass = 0.71
+            point3f physics:centerOfMass = (0.0001215047, 0.0001046322, -0.004385973)
+            float3 physics:diagonalInertia = (0.000404550827, 0.000439886946, 0.000489262227)
+            quatf physics:principalAxes = (-0.49244471, -0.504444895, 0.472205793, 0.52920246)
+            over Scope "Visuals"
+            {
+                over Mesh "link1_visual_0" (
+                    prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+                )
+                {
+                    bool physics:collisionEnabled = true
+                    token physics:approximation = "convexHull"
+                }
+            }
+        }
+        over Xform "link2" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            bool physics:rigidBodyEnabled = true
+            float physics:mass = 1.17
+            point3f physics:centerOfMass = (0.1986661, -0.01092692, 0.001421217)
+            float3 physics:diagonalInertia = (0.00111966106, 0.0677450219, 0.0679032271)
+            quatf physics:principalAxes = (-0.681167029, 0.732001415, 0.00858754573, -0.0105669951)
+            over Scope "Visuals"
+            {
+                over Mesh "link2_visual_0" (
+                    prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+                )
+                {
+                    bool physics:collisionEnabled = true
+                    token physics:approximation = "convexHull"
+                }
+            }
+        }
+        over Xform "link3" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            bool physics:rigidBodyEnabled = true
+            float physics:mass = 0.5
+            point3f physics:centerOfMass = (-0.02027377, -0.133915, -0.0004586827)
+            float3 physics:diagonalInertia = (0.000244685267, 0.0138032055, 0.0138226793)
+            quatf physics:principalAxes = (-0.522587997, 0.537049124, -0.474589892, 0.461783996)
+            over Scope "Visuals"
+            {
+                over Mesh "link3_visual_0" (
+                    prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+                )
+                {
+                    bool physics:collisionEnabled = true
+                    token physics:approximation = "convexHull"
+                }
+            }
+        }
+        over Xform "link4" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            bool physics:rigidBodyEnabled = true
+            float physics:mass = 0.38
+            point3f physics:centerOfMass = (-9.666358e-05, 0.0008760645, -0.004968809)
+            float3 physics:diagonalInertia = (0.00015286287, 0.000185051551, 0.000191585578)
+            quatf physics:principalAxes = (-0.420880886, 0.550278601, 0.555016725, 0.460444542)
+            over Scope "Visuals"
+            {
+                over Mesh "link4_visual_0" (
+                    prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+                )
+                {
+                    bool physics:collisionEnabled = true
+                    token physics:approximation = "convexHull"
+                }
+            }
+        }
+        over Xform "link5" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            bool physics:rigidBodyEnabled = true
+            float physics:mass = 0.383
+            point3f physics:centerOfMass = (-4.105541e-05, -0.05664867, -0.003720579)
+            float3 physics:diagonalInertia = (0.000185027807, 0.00164328193, 0.00166169027)
+            quatf physics:principalAxes = (0.49917501, -0.500803181, -0.497298968, 0.502706891)
+            over Scope "Visuals"
+            {
+                over Mesh "link5_visual_0" (
+                    prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+                )
+                {
+                    bool physics:collisionEnabled = true
+                    token physics:approximation = "convexHull"
+                }
+            }
+        }
+        over Xform "link6" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            bool physics:rigidBodyEnabled = true
+            float physics:mass = 0.007
+            point3f physics:centerOfMass = (-8.825908e-05, 9.059838e-06, -0.002)
+            float3 physics:diagonalInertia = (5.73015541e-07, 5.73015541e-07, 1.06738869e-06)
+            quatf physics:principalAxes = (0, 0.963743945, 0.266828801, 0)
+            over Scope "Visuals"
+            {
+                over Mesh "link6_visual_0" (
+                    prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+                )
+                {
+                    bool physics:collisionEnabled = true
+                    token physics:approximation = "convexHull"
+                }
+            }
+        }
+        over Xform "gripper_base" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            bool physics:rigidBodyEnabled = true
+            float physics:mass = 0.45
+            point3f physics:centerOfMass = (-0.0001838072, 8.050332e-05, 0.03214367)
+            float3 physics:diagonalInertia = (0.000394318192, 0.000714469474, 0.000929442334)
+            quatf physics:principalAxes = (0.702213246, -0.000493325271, 0.71196624, 0.000621798756)
+            over Scope "Visuals"
+            {
+                over Mesh "gripper_base_visual_0" (
+                    prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+                )
+                {
+                    bool physics:collisionEnabled = true
+                    token physics:approximation = "convexHull"
+                }
+            }
+        }
+        over Xform "link7" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            bool physics:rigidBodyEnabled = true
+            float physics:mass = 0.025
+            point3f physics:centerOfMass = (0.0006512319, -0.04919299, 0.009722588)
+            float3 physics:diagonalInertia = (5.08859839e-06, 7.36782567e-05, 7.74531449e-05)
+            quatf physics:principalAxes = (-0.701005907, -0.0284469923, -0.10930237, 0.704155152)
+            over Scope "Visuals"
+            {
+                over Mesh "link7_visual_0" (
+                    prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+                )
+                {
+                    bool physics:collisionEnabled = true
+                    token physics:approximation = "convexHull"
+                }
+            }
+        }
+        over Xform "link8" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            bool physics:rigidBodyEnabled = true
+            float physics:mass = 0.025
+            point3f physics:centerOfMass = (0.0006512319, -0.04919299, 0.009722588)
+            float3 physics:diagonalInertia = (5.08859839e-06, 7.36782567e-05, 7.74531449e-05)
+            quatf physics:principalAxes = (-0.701005907, -0.0284469923, -0.10930237, 0.704155152)
+            over Scope "Visuals"
+            {
+                over Mesh "link8_visual_0" (
+                    prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+                )
+                {
+                    bool physics:collisionEnabled = true
+                    token physics:approximation = "convexHull"
+                }
+            }
+        }
+    }
+
+    def Scope "Joints"
+    {
+        def PhysicsRevoluteJoint "fl_hipx_joint"
+        {
+            rel physics:body0 = </S10_Piper/Links/base_link>
+            rel physics:body1 = </S10_Piper/Links/fl_hipx>
+            token physics:axis = "Z"
+            point3f physics:localPos0 = (0.2277, 0.0574, 0)
+            quatf physics:localRot0 = (0.707106781, 0, -0.707106781, 0)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot1 = (0.707106781, 0, -0.707106781, 0)
+            float physics:lowerLimit = -35.0019917
+            float physics:upperLimit = 35.0019917
+        }
+        def PhysicsRevoluteJoint "fl_hipy_joint"
+        {
+            rel physics:body0 = </S10_Piper/Links/fl_hipx>
+            rel physics:body1 = </S10_Piper/Links/fl_hipy>
+            token physics:axis = "Z"
+            point3f physics:localPos0 = (0, 0.0779, 0)
+            quatf physics:localRot0 = (0.707106781, 0.707106781, 0, 0)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot1 = (0.707106781, 0.707106781, 0, 0)
+            float physics:lowerLimit = -144.998429
+            float physics:upperLimit = 144.998429
+        }
+        def PhysicsRevoluteJoint "fl_knee_joint"
+        {
+            rel physics:body0 = </S10_Piper/Links/fl_hipy>
+            rel physics:body1 = </S10_Piper/Links/fl_knee>
+            token physics:axis = "Z"
+            point3f physics:localPos0 = (0, 0, -0.18)
+            quatf physics:localRot0 = (0.707106781, 0.707106781, 0, 0)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot1 = (0.707106781, 0.707106781, 0, 0)
+            float physics:lowerLimit = -155.999219
+            float physics:upperLimit = 155.999219
+        }
+        def PhysicsRevoluteJoint "fl_wheel_joint"
+        {
+            rel physics:body0 = </S10_Piper/Links/fl_knee>
+            rel physics:body1 = </S10_Piper/Links/fl_wheel>
+            token physics:axis = "Z"
+            point3f physics:localPos0 = (0, 0.045891, -0.18)
+            quatf physics:localRot0 = (0.707106781, 0.707106781, 0, 0)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot1 = (0.707106781, 0.707106781, 0, 0)
+        }
+        def PhysicsRevoluteJoint "fr_hipx_joint"
+        {
+            rel physics:body0 = </S10_Piper/Links/base_link>
+            rel physics:body1 = </S10_Piper/Links/fr_hipx>
+            token physics:axis = "Z"
+            point3f physics:localPos0 = (0.2277, -0.0574, 0)
+            quatf physics:localRot0 = (0.707106781, 0, -0.707106781, 0)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot1 = (0.707106781, 0, -0.707106781, 0)
+            float physics:lowerLimit = -35.0019917
+            float physics:upperLimit = 35.0019917
+        }
+        def PhysicsRevoluteJoint "fr_hipy_joint"
+        {
+            rel physics:body0 = </S10_Piper/Links/fr_hipx>
+            rel physics:body1 = </S10_Piper/Links/fr_hipy>
+            token physics:axis = "Z"
+            point3f physics:localPos0 = (0, -0.0779, 0)
+            quatf physics:localRot0 = (0.707106781, 0.707106781, 0, 0)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot1 = (0.707106781, 0.707106781, 0, 0)
+            float physics:lowerLimit = -144.998429
+            float physics:upperLimit = 144.998429
+        }
+        def PhysicsRevoluteJoint "fr_knee_joint"
+        {
+            rel physics:body0 = </S10_Piper/Links/fr_hipy>
+            rel physics:body1 = </S10_Piper/Links/fr_knee>
+            token physics:axis = "Z"
+            point3f physics:localPos0 = (0, 0, -0.18)
+            quatf physics:localRot0 = (0.707106781, 0.707106781, 0, 0)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot1 = (0.707106781, 0.707106781, 0, 0)
+            float physics:lowerLimit = -155.999219
+            float physics:upperLimit = 155.999219
+        }
+        def PhysicsRevoluteJoint "fr_wheel_joint"
+        {
+            rel physics:body0 = </S10_Piper/Links/fr_knee>
+            rel physics:body1 = </S10_Piper/Links/fr_wheel>
+            token physics:axis = "Z"
+            point3f physics:localPos0 = (0, -0.045891, -0.18)
+            quatf physics:localRot0 = (0.707106781, 0.707106781, 0, 0)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot1 = (0.707106781, 0.707106781, 0, 0)
+        }
+        def PhysicsRevoluteJoint "hl_hipx_joint"
+        {
+            rel physics:body0 = </S10_Piper/Links/base_link>
+            rel physics:body1 = </S10_Piper/Links/hl_hipx>
+            token physics:axis = "Z"
+            point3f physics:localPos0 = (-0.2277, 0.0574, 0)
+            quatf physics:localRot0 = (0.707106781, 0, -0.707106781, 0)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot1 = (0.707106781, 0, -0.707106781, 0)
+            float physics:lowerLimit = -35.0019917
+            float physics:upperLimit = 35.0019917
+        }
+        def PhysicsRevoluteJoint "hl_hipy_joint"
+        {
+            rel physics:body0 = </S10_Piper/Links/hl_hipx>
+            rel physics:body1 = </S10_Piper/Links/hl_hipy>
+            token physics:axis = "Z"
+            point3f physics:localPos0 = (0, 0.0779, 0)
+            quatf physics:localRot0 = (0.707106781, 0.707106781, 0, 0)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot1 = (0.707106781, 0.707106781, 0, 0)
+            float physics:lowerLimit = -144.998429
+            float physics:upperLimit = 144.998429
+        }
+        def PhysicsRevoluteJoint "hl_knee_joint"
+        {
+            rel physics:body0 = </S10_Piper/Links/hl_hipy>
+            rel physics:body1 = </S10_Piper/Links/hl_knee>
+            token physics:axis = "Z"
+            point3f physics:localPos0 = (0, 0, -0.18)
+            quatf physics:localRot0 = (0.707106781, 0.707106781, 0, 0)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot1 = (0.707106781, 0.707106781, 0, 0)
+            float physics:lowerLimit = -155.999219
+            float physics:upperLimit = 155.999219
+        }
+        def PhysicsRevoluteJoint "hl_wheel_joint"
+        {
+            rel physics:body0 = </S10_Piper/Links/hl_knee>
+            rel physics:body1 = </S10_Piper/Links/hl_wheel>
+            token physics:axis = "Z"
+            point3f physics:localPos0 = (0, 0.045891, -0.18)
+            quatf physics:localRot0 = (0.707106781, 0.707106781, 0, 0)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot1 = (0.707106781, 0.707106781, 0, 0)
+        }
+        def PhysicsRevoluteJoint "hr_hipx_joint"
+        {
+            rel physics:body0 = </S10_Piper/Links/base_link>
+            rel physics:body1 = </S10_Piper/Links/hr_hipx>
+            token physics:axis = "Z"
+            point3f physics:localPos0 = (-0.2277, -0.0574, 0)
+            quatf physics:localRot0 = (0.707106781, 0, -0.707106781, 0)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot1 = (0.707106781, 0, -0.707106781, 0)
+            float physics:lowerLimit = -35.0019917
+            float physics:upperLimit = 35.0019917
+        }
+        def PhysicsRevoluteJoint "hr_hipy_joint"
+        {
+            rel physics:body0 = </S10_Piper/Links/hr_hipx>
+            rel physics:body1 = </S10_Piper/Links/hr_hipy>
+            token physics:axis = "Z"
+            point3f physics:localPos0 = (0, -0.0779, 0)
+            quatf physics:localRot0 = (0.707106781, 0.707106781, 0, 0)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot1 = (0.707106781, 0.707106781, 0, 0)
+            float physics:lowerLimit = -144.998429
+            float physics:upperLimit = 144.998429
+        }
+        def PhysicsRevoluteJoint "hr_knee_joint"
+        {
+            rel physics:body0 = </S10_Piper/Links/hr_hipy>
+            rel physics:body1 = </S10_Piper/Links/hr_knee>
+            token physics:axis = "Z"
+            point3f physics:localPos0 = (0, 0, -0.18)
+            quatf physics:localRot0 = (0.707106781, 0.707106781, 0, 0)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot1 = (0.707106781, 0.707106781, 0, 0)
+            float physics:lowerLimit = -155.999219
+            float physics:upperLimit = 155.999219
+        }
+        def PhysicsRevoluteJoint "hr_wheel_joint"
+        {
+            rel physics:body0 = </S10_Piper/Links/hr_knee>
+            rel physics:body1 = </S10_Piper/Links/hr_wheel>
+            token physics:axis = "Z"
+            point3f physics:localPos0 = (0, -0.045891, -0.18)
+            quatf physics:localRot0 = (0.707106781, 0.707106781, 0, 0)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot1 = (0.707106781, 0.707106781, 0, 0)
+        }
+        def PhysicsFixedJoint "piper_mount_joint"
+        {
+            rel physics:body0 = </S10_Piper/Links/base_link>
+            rel physics:body1 = </S10_Piper/Links/piper_base_link>
+            point3f physics:localPos0 = (0.045, 0, 0.067616)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+        def PhysicsRevoluteJoint "joint1"
+        {
+            rel physics:body0 = </S10_Piper/Links/piper_base_link>
+            rel physics:body1 = </S10_Piper/Links/link1>
+            token physics:axis = "Z"
+            point3f physics:localPos0 = (0, 0, 0.123)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = -150.000351
+            float physics:upperLimit = 150.000351
+        }
+        def PhysicsRevoluteJoint "joint2"
+        {
+            rel physics:body0 = </S10_Piper/Links/link1>
+            rel physics:body1 = </S10_Piper/Links/link2>
+            token physics:axis = "Z"
+            point3f physics:localPos0 = (0, 0, 0)
+            quatf physics:localRot0 = (0.0480084367, -0.048013443, -0.705476101, -0.705473862)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = 0
+            float physics:upperLimit = 179.908748
+        }
+        def PhysicsRevoluteJoint "joint3"
+        {
+            rel physics:body0 = </S10_Piper/Links/link2>
+            rel physics:body1 = </S10_Piper/Links/link3>
+            token physics:axis = "Z"
+            point3f physics:localPos0 = (0.28503, 0, 0)
+            quatf physics:localRot0 = (0.62399622, 0, 0, -0.781427359)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = -169.996578
+            float physics:upperLimit = 0
+        }
+        def PhysicsRevoluteJoint "joint4"
+        {
+            rel physics:body0 = </S10_Piper/Links/link3>
+            rel physics:body1 = </S10_Piper/Links/link4>
+            token physics:axis = "Z"
+            point3f physics:localPos0 = (-0.021984, -0.25075, 0)
+            quatf physics:localRot0 = (0.707105483, 0.70710808, 0, 0)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = -99.9811353
+            float physics:upperLimit = 99.9811353
+        }
+        def PhysicsRevoluteJoint "joint5"
+        {
+            rel physics:body0 = </S10_Piper/Links/link4>
+            rel physics:body1 = </S10_Piper/Links/link5>
+            token physics:axis = "Z"
+            point3f physics:localPos0 = (0, 0, 0)
+            quatf physics:localRot0 = (0.707105483, -0.70710808, 0, 0)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = -69.900851
+            float physics:upperLimit = 69.900851
+        }
+        def PhysicsRevoluteJoint "joint6"
+        {
+            rel physics:body0 = </S10_Piper/Links/link5>
+            rel physics:body1 = </S10_Piper/Links/link6>
+            token physics:axis = "Z"
+            point3f physics:localPos0 = (8.8259e-05, -0.091, 0)
+            quatf physics:localRot0 = (0.707105483, 0.70710808, 0, 0)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = -120.000281
+            float physics:upperLimit = 120.000281
+        }
+        def PhysicsFixedJoint "joint6_to_gripper_base"
+        {
+            rel physics:body0 = </S10_Piper/Links/link6>
+            rel physics:body1 = </S10_Piper/Links/gripper_base>
+            point3f physics:localPos0 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+        def PhysicsPrismaticJoint "joint7"
+        {
+            rel physics:body0 = </S10_Piper/Links/gripper_base>
+            rel physics:body1 = </S10_Piper/Links/link7>
+            token physics:axis = "Z"
+            point3f physics:localPos0 = (0, 0, 0.1358)
+            quatf physics:localRot0 = (0.707105483, 0.70710808, 0, 0)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = 0
+            float physics:upperLimit = 0.035
+        }
+        def PhysicsPrismaticJoint "joint8"
+        {
+            rel physics:body0 = </S10_Piper/Links/gripper_base>
+            rel physics:body1 = </S10_Piper/Links/link8>
+            token physics:axis = "Z"
+            point3f physics:localPos0 = (0, 0, 0.1358)
+            quatf physics:localRot0 = (2.59735301e-06, -2.59734347e-06, -0.707105483, 0.70710808)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot1 = (0, 1, 0, 0)
+            float physics:lowerLimit = -0.035
+            float physics:upperLimit = 0
+        }
+    }
+}

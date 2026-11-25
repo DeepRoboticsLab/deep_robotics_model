@@ -1,0 +1,315 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mujoco model="S10_Piper">
+  <compiler angle="radian" meshdir="meshes/" autolimits="true" />
+  <option timestep="0.001" gravity="0 0 -9.81" />
+  <default>
+    <joint damping="0" frictionloss="0" />
+    <geom condim="3" friction="1 0.01 0.001" />
+    <default class="visual">
+      <geom group="1" contype="0" conaffinity="0" />
+    </default>
+    <default class="collision">
+      <geom group="3" contype="1" conaffinity="1" rgba="0.9373 0.2667 0.2667 0.25" />
+    </default>
+  </default>
+  <asset>
+    <mesh name="arm_base_link" file="piper/arm_base_link.STL" />
+    <mesh name="base_link" file="base_link.STL" />
+    <mesh name="fl_hipx" file="fl_hipx.STL" />
+    <mesh name="fl_hipy" file="fl_hipy.STL" />
+    <mesh name="fl_knee" file="fl_knee.STL" />
+    <mesh name="fl_wheel" file="fl_wheel.STL" />
+    <mesh name="fr_hipx" file="fr_hipx.STL" />
+    <mesh name="fr_hipy" file="fr_hipy.STL" />
+    <mesh name="fr_knee" file="fr_knee.STL" />
+    <mesh name="fr_wheel" file="fr_wheel.STL" />
+    <mesh name="gripper_base" file="piper/gripper_base.STL" />
+    <mesh name="hl_hipx" file="hl_hipx.STL" />
+    <mesh name="hl_hipy" file="hl_hipy.STL" />
+    <mesh name="hl_knee" file="hl_knee.STL" />
+    <mesh name="hl_wheel" file="hl_wheel.STL" />
+    <mesh name="hr_hipx" file="hr_hipx.STL" />
+    <mesh name="hr_hipy" file="hr_hipy.STL" />
+    <mesh name="hr_knee" file="hr_knee.STL" />
+    <mesh name="hr_wheel" file="hr_wheel.STL" />
+    <mesh name="link1" file="piper/link1.STL" />
+    <mesh name="link2" file="piper/link2.STL" />
+    <mesh name="link3" file="piper/link3.STL" />
+    <mesh name="link4" file="piper/link4.STL" />
+    <mesh name="link5" file="piper/link5.STL" />
+    <mesh name="link6" file="piper/link6.STL" />
+    <mesh name="link7" file="piper/link7.STL" />
+    <mesh name="link8" file="piper/link8.STL" />
+    <material name="base_link_mat" rgba="0.75294118 0.75294118 0.75294118 1" />
+    <material name="fl_hipx_mat" rgba="0.75294118 0.75294118 0.75294118 1" />
+    <material name="fl_hipy_mat" rgba="0.75294118 0.75294118 0.75294118 1" />
+    <material name="fl_knee_mat" rgba="0.75294118 0.75294118 0.75294118 1" />
+    <material name="fl_wheel_mat" rgba="0.29803922 0.29803922 0.29803922 1" />
+    <material name="fr_hipx_mat" rgba="0.75294118 0.75294118 0.75294118 1" />
+    <material name="fr_hipy_mat" rgba="0.75294118 0.75294118 0.75294118 1" />
+    <material name="fr_knee_mat" rgba="0.75294118 0.75294118 0.75294118 1" />
+    <material name="fr_wheel_mat" rgba="0.29803922 0.29803922 0.29803922 1" />
+    <material name="hl_hipx_mat" rgba="0.75294118 0.75294118 0.75294118 1" />
+    <material name="hl_hipy_mat" rgba="0.75294118 0.75294118 0.75294118 1" />
+    <material name="hl_knee_mat" rgba="0.75294118 0.75294118 0.75294118 1" />
+    <material name="hl_wheel_mat" rgba="0.29803922 0.29803922 0.29803922 1" />
+    <material name="hr_hipx_mat" rgba="0.75294118 0.75294118 0.75294118 1" />
+    <material name="hr_hipy_mat" rgba="0.75294118 0.75294118 0.75294118 1" />
+    <material name="hr_knee_mat" rgba="0.75294118 0.75294118 0.75294118 1" />
+    <material name="hr_wheel_mat" rgba="0.29803922 0.29803922 0.29803922 1" />
+    <material name="piper_base_link_mat" rgba="0.79215686 0.81960784 0.93333333 1" />
+    <material name="link1_mat" rgba="0.79215686 0.81960784 0.93333333 1" />
+    <material name="link2_mat" rgba="0.79215686 0.81960784 0.93333333 1" />
+    <material name="link3_mat" rgba="0.79215686 0.81960784 0.93333333 1" />
+    <material name="link4_mat" rgba="0.79215686 0.81960784 0.93333333 1" />
+    <material name="link5_mat" rgba="0.79215686 0.81960784 0.93333333 1" />
+    <material name="link6_mat" rgba="0.89803922 0.91764706 0.92941176 1" />
+    <material name="gripper_base_mat" rgba="0.79215686 0.81960784 0.93333333 1" />
+    <material name="link7_mat" rgba="0.79215686 0.81960784 0.93333333 1" />
+    <material name="link8_mat" rgba="0.79215686 0.81960784 0.93333333 1" />
+  </asset>
+  <worldbody>
+    <body name="base_link">
+      <freejoint name="floating_base" />
+      <inertial mass="8.023087" fullinertia="0.115559 0.171329 0.262028 -0.000178 -9e-05 -0.00065" pos="-0.000512 0.057317 0.001182" />
+      <geom name="base_link_visual_0" type="mesh" mesh="base_link" class="visual" material="base_link_mat" />
+      <geom name="base_link_collision_0" class="collision" pos="0 0.024 0" quat="0.70710678 0 0.70710678 0" type="cylinder" size="0.08 0.3" />
+      <geom name="base_link_collision_1" class="collision" pos="0 -0.024 0" quat="0.70710678 0 0.70710678 0" type="cylinder" size="0.08 0.3" />
+      <geom name="base_link_collision_2" class="collision" quat="0.70710678 0 0.70710678 0" type="box" size="0.08 0.024 0.3" />
+      <site name="base_site" pos="0 0 0" size="0.005" rgba="1 0 0 1" />
+      <body name="fl_hipx" pos="0.2277 0.0574 0">
+        <joint name="fl_hipx_joint" type="hinge" axis="-1 0 0" limited="true" range="-0.6109 0.6109" />
+        <inertial mass="0.627405" fullinertia="0.000293 0.000322 0.000415 8.3e-05 -1e-06 2e-06" pos="-0.005034 0.023524 4.6e-05" />
+        <geom name="fl_hipx_visual_0" type="mesh" mesh="fl_hipx" class="visual" material="fl_hipx_mat" />
+        <geom name="fl_hipx_collision_0" class="collision" pos="0 0.054 0" quat="0.70710678 0.70710678 0 0" type="cylinder" size="0.04 0.05" />
+        <body name="fl_hipy" pos="0 0.0779 0">
+          <joint name="fl_hipy_joint" type="hinge" axis="0 -1 0" limited="true" range="-2.5307 2.5307" />
+          <inertial mass="0.885874" fullinertia="0.004452 0.004452 0.000394 -1e-06 0 -0.000607" pos="7.4e-05 0.018439 -0.129675" />
+          <geom name="fl_hipy_visual_0" type="mesh" mesh="fl_hipy" class="visual" material="fl_hipy_mat" />
+          <geom name="fl_hipy_collision_0" class="collision" pos="0 0.012 -0.09" type="box" size="0.032 0.012 0.09" />
+          <geom name="fl_hipy_collision_1" class="collision" pos="0 0.018 -0.18" quat="0.70710678 0.70710678 0 0" type="cylinder" size="0.04 0.04" />
+          <body name="fl_knee" pos="0 0 -0.18">
+            <joint name="fl_knee_joint" type="hinge" axis="0 -1 0" limited="true" range="-2.7227 2.7227" />
+            <inertial mass="0.640283" fullinertia="0.002221 0.002154 0.000269 0 0 -0.000385" pos="-3.2e-05 0.013504 -0.156308" />
+            <geom name="fl_knee_visual_0" type="mesh" mesh="fl_knee" class="visual" material="fl_knee_mat" />
+            <geom name="fl_knee_collision_0" class="collision" pos="0 -0.012 -0.09" type="box" size="0.029 0.01 0.09" />
+            <geom name="fl_knee_collision_1" class="collision" pos="0 0.002 -0.18" quat="0.70710678 0.70710678 0 0" type="cylinder" size="0.04 0.025" />
+            <body name="fl_wheel" pos="0 0.045891 -0.18">
+              <joint name="fl_wheel_joint" type="hinge" axis="0 -1 0" limited="false" />
+              <inertial mass="0.587952" fullinertia="0.001059 0.002003 0.001059 0 0 0" pos="-8e-06 0.001694 -5e-06" />
+              <geom name="fl_wheel_visual_0" type="mesh" mesh="fl_wheel" class="visual" material="fl_wheel_mat" />
+              <geom name="fl_wheel_collision_0" class="collision" quat="0.70710678 0.70710678 0 0" type="cylinder" size="0.081 0.0185" />
+            </body>
+          </body>
+        </body>
+      </body>
+      <body name="fr_hipx" pos="0.2277 -0.0574 0">
+        <joint name="fr_hipx_joint" type="hinge" axis="-1 0 0" limited="true" range="-0.6109 0.6109" />
+        <inertial mass="0.626546" fullinertia="0.000292 0.000322 0.000415 -8.7e-05 1e-06 -2e-06" pos="-0.004831 -0.02349 0.000169" />
+        <geom name="fr_hipx_visual_0" type="mesh" mesh="fr_hipx" class="visual" material="fr_hipx_mat" />
+        <geom name="fr_hipx_collision_0" class="collision" pos="0 -0.054 0" quat="0.70710678 0.70710678 0 0" type="cylinder" size="0.04 0.05" />
+        <body name="fr_hipy" pos="0 -0.0779 0">
+          <joint name="fr_hipy_joint" type="hinge" axis="0 -1 0" limited="true" range="-2.5307 2.5307" />
+          <inertial mass="0.885874" fullinertia="0.004452 0.004452 0.000394 -1e-06 0 0.000607" pos="-7.4e-05 -0.018439 -0.129675" />
+          <geom name="fr_hipy_visual_0" type="mesh" mesh="fr_hipy" class="visual" material="fr_hipy_mat" />
+          <geom name="fr_hipy_collision_0" class="collision" pos="0 -0.012 -0.09" type="box" size="0.032 0.012 0.09" />
+          <geom name="fr_hipy_collision_1" class="collision" pos="0 -0.018 -0.18" quat="0.70710678 0.70710678 0 0" type="cylinder" size="0.04 0.04" />
+          <body name="fr_knee" pos="0 0 -0.18">
+            <joint name="fr_knee_joint" type="hinge" axis="0 -1 0" limited="true" range="-2.7227 2.7227" />
+            <inertial mass="0.640283" fullinertia="0.002221 0.002154 0.000269 0 0 0.000385" pos="3.2e-05 -0.013504 -0.156308" />
+            <geom name="fr_knee_visual_0" type="mesh" mesh="fr_knee" class="visual" material="fr_knee_mat" />
+            <geom name="fr_knee_collision_0" class="collision" pos="0 0.012 -0.09" type="box" size="0.029 0.01 0.09" />
+            <geom name="fr_knee_collision_1" class="collision" pos="0 -0.002 -0.18" quat="0.70710678 0.70710678 0 0" type="cylinder" size="0.04 0.025" />
+            <body name="fr_wheel" pos="0 -0.045891 -0.18">
+              <joint name="fr_wheel_joint" type="hinge" axis="0 -1 0" limited="false" />
+              <inertial mass="0.587952" fullinertia="0.001059 0.002003 0.001059 0 0 0" pos="8e-06 -0.001694 5e-06" />
+              <geom name="fr_wheel_visual_0" type="mesh" mesh="fr_wheel" class="visual" material="fr_wheel_mat" />
+              <geom name="fr_wheel_collision_0" class="collision" quat="0.70710678 0.70710678 0 0" type="cylinder" size="0.081 0.0185" />
+            </body>
+          </body>
+        </body>
+      </body>
+      <body name="hl_hipx" pos="-0.2277 0.0574 0">
+        <joint name="hl_hipx_joint" type="hinge" axis="-1 0 0" limited="true" range="-0.6109 0.6109" />
+        <inertial mass="0.626546" fullinertia="0.000292 0.000322 0.000415 -8.7e-05 -1e-06 2e-06" pos="0.004831 0.02349 0.000169" />
+        <geom name="hl_hipx_visual_0" type="mesh" mesh="hl_hipx" class="visual" material="hl_hipx_mat" />
+        <geom name="hl_hipx_collision_0" class="collision" pos="0 0.054 0" quat="0.70710678 0.70710678 0 0" type="cylinder" size="0.04 0.05" />
+        <body name="hl_hipy" pos="0 0.0779 0">
+          <joint name="hl_hipy_joint" type="hinge" axis="0 -1 0" limited="true" range="-2.5307 2.5307" />
+          <inertial mass="0.885874" fullinertia="0.004452 0.004452 0.000394 -1e-06 0 -0.000607" pos="7.4e-05 0.018439 -0.129675" />
+          <geom name="hl_hipy_visual_0" type="mesh" mesh="hl_hipy" class="visual" material="hl_hipy_mat" />
+          <geom name="hl_hipy_collision_0" class="collision" pos="0 0.012 -0.09" type="box" size="0.032 0.012 0.09" />
+          <geom name="hl_hipy_collision_1" class="collision" pos="0 0.018 -0.18" quat="0.70710678 0.70710678 0 0" type="cylinder" size="0.04 0.04" />
+          <body name="hl_knee" pos="0 0 -0.18">
+            <joint name="hl_knee_joint" type="hinge" axis="0 -1 0" limited="true" range="-2.7227 2.7227" />
+            <inertial mass="0.640283" fullinertia="0.002221 0.002154 0.000269 0 0 -0.000385" pos="-3.2e-05 0.013504 -0.156308" />
+            <geom name="hl_knee_visual_0" type="mesh" mesh="hl_knee" class="visual" material="hl_knee_mat" />
+            <geom name="hl_knee_collision_0" class="collision" pos="0 -0.012 -0.09" type="box" size="0.029 0.01 0.09" />
+            <geom name="hl_knee_collision_1" class="collision" pos="0 0.002 -0.18" quat="0.70710678 0.70710678 0 0" type="cylinder" size="0.04 0.025" />
+            <body name="hl_wheel" pos="0 0.045891 -0.18">
+              <joint name="hl_wheel_joint" type="hinge" axis="0 -1 0" limited="false" />
+              <inertial mass="0.587952" fullinertia="0.001059 0.002003 0.001059 0 0 0" pos="-8e-06 0.001694 -5e-06" />
+              <geom name="hl_wheel_visual_0" type="mesh" mesh="hl_wheel" class="visual" material="hl_wheel_mat" />
+              <geom name="hl_wheel_collision_0" class="collision" quat="0.70710678 0.70710678 0 0" type="cylinder" size="0.081 0.0185" />
+            </body>
+          </body>
+        </body>
+      </body>
+      <body name="hr_hipx" pos="-0.2277 -0.0574 0">
+        <joint name="hr_hipx_joint" type="hinge" axis="-1 0 0" limited="true" range="-0.6109 0.6109" />
+        <inertial mass="0.627405" fullinertia="0.000293 0.000322 0.000415 8.3e-05 1e-06 -2e-06" pos="0.005034 -0.023524 4.6e-05" />
+        <geom name="hr_hipx_visual_0" type="mesh" mesh="hr_hipx" class="visual" material="hr_hipx_mat" />
+        <geom name="hr_hipx_collision_0" class="collision" pos="0 -0.054 0" quat="0.70710678 0.70710678 0 0" type="cylinder" size="0.04 0.05" />
+        <body name="hr_hipy" pos="0 -0.0779 0">
+          <joint name="hr_hipy_joint" type="hinge" axis="0 -1 0" limited="true" range="-2.5307 2.5307" />
+          <inertial mass="0.885874" fullinertia="0.004452 0.004452 0.000394 -1e-06 0 0.000607" pos="-7.4e-05 -0.018439 -0.129675" />
+          <geom name="hr_hipy_visual_0" type="mesh" mesh="hr_hipy" class="visual" material="hr_hipy_mat" />
+          <geom name="hr_hipy_collision_0" class="collision" pos="0 -0.012 -0.09" type="box" size="0.032 0.012 0.09" />
+          <geom name="hr_hipy_collision_1" class="collision" pos="0 -0.018 -0.18" quat="0.70710678 0.70710678 0 0" type="cylinder" size="0.04 0.04" />
+          <body name="hr_knee" pos="0 0 -0.18">
+            <joint name="hr_knee_joint" type="hinge" axis="0 -1 0" limited="true" range="-2.7227 2.7227" />
+            <inertial mass="0.640283" fullinertia="0.002221 0.002154 0.000269 0 0 0.000385" pos="3.2e-05 -0.013504 -0.156308" />
+            <geom name="hr_knee_visual_0" type="mesh" mesh="hr_knee" class="visual" material="hr_knee_mat" />
+            <geom name="hr_knee_collision_0" class="collision" pos="0 0.012 -0.09" type="box" size="0.029 0.01 0.09" />
+            <geom name="hr_knee_collision_1" class="collision" pos="0 -0.002 -0.18" quat="0.70710678 0.70710678 0 0" type="cylinder" size="0.04 0.025" />
+            <body name="hr_wheel" pos="0 -0.045891 -0.18">
+              <joint name="hr_wheel_joint" type="hinge" axis="0 -1 0" limited="false" />
+              <inertial mass="0.587952" fullinertia="0.001059 0.002003 0.001059 0 0 0" pos="8e-06 -0.001694 5e-06" />
+              <geom name="hr_wheel_visual_0" type="mesh" mesh="hr_wheel" class="visual" material="hr_wheel_mat" />
+              <geom name="hr_wheel_collision_0" class="collision" quat="0.70710678 0.70710678 0 0" type="cylinder" size="0.081 0.0185" />
+            </body>
+          </body>
+        </body>
+      </body>
+      <body name="imu_link" pos="0.0075 -0.0373 0.0556" quat="0.50039816 0.49999984 0.49999984 -0.49960184">
+        <site name="imu_site" pos="0 0 0" size="0.005" rgba="0 1 0 1" />
+      </body>
+      <body name="front_lidar_link" pos="0.22341 0 -0.0001">
+        <site name="front_lidar_site" pos="0 0 0" size="0.005" rgba="0 0 1 1" />
+      </body>
+      <body name="back_lidar_link" pos="-0.22341 0 -0.0001" quat="1.3267949e-06 0 0 1">
+        <site name="back_lidar_site" pos="0 0 0" size="0.005" rgba="0 0 1 1" />
+      </body>
+      <body name="piper_base_link" pos="0.045 0 0.067616">
+        <inertial mass="1.02" fullinertia="0.00267433 0.00282612 0.00089624 -7.3e-07 -0.00017389 4e-07" pos="-0.0047364116 2.5682913e-05 0.041451518" />
+        <geom name="piper_base_link_visual_0" type="mesh" mesh="arm_base_link" class="visual" material="piper_base_link_mat" />
+        <geom name="piper_base_link_collision_0" class="collision" type="mesh" mesh="arm_base_link" />
+        <body name="link1" pos="0 0 0.123">
+          <joint name="joint1" type="hinge" axis="0 0 1" limited="true" range="-2.618 2.618" />
+          <inertial mass="0.71" fullinertia="0.00048916 0.00040472 0.00043982 -3.6e-07 -2.24e-06 -2.42e-06" pos="0.00012150473 0.00010463216 -0.0043859731" />
+          <geom name="link1_visual_0" type="mesh" mesh="link1" class="visual" material="link1_mat" />
+          <geom name="link1_collision_0" class="collision" type="mesh" mesh="link1" />
+          <body name="link2" quat="0.048008437 -0.048013443 -0.7054761 -0.70547386">
+            <joint name="joint2" type="hinge" axis="0 0 1" limited="true" range="0 3.14" />
+            <inertial mass="1.17" fullinertia="0.00116918 0.06785384 0.06774489 -0.00180037 0.00025146 -4.55e-06" pos="0.19866615 -0.010926924 0.0014212171" />
+            <geom name="link2_visual_0" type="mesh" mesh="link2" class="visual" material="link2_mat" />
+            <geom name="link2_collision_0" class="collision" type="mesh" mesh="link2" />
+            <body name="link3" pos="0.28503 0 0" quat="0.62399622 0 0 -0.78142736">
+              <joint name="joint3" type="hinge" axis="0 0 1" limited="true" range="-2.967 0" />
+              <inertial mass="0.5" fullinertia="0.01361711 0.00045024 0.01380322 0.00165794 -4.8e-07 -4.5e-07" pos="-0.020273766 -0.133915 -0.00045868265" />
+              <geom name="link3_visual_0" type="mesh" mesh="link3" class="visual" material="link3_mat" />
+              <geom name="link3_collision_0" class="collision" type="mesh" mesh="link3" />
+              <body name="link4" pos="-0.021984 -0.25075 0" quat="0.70710548 0.70710808 0 0">
+                <joint name="joint4" type="hinge" axis="0 0 1" limited="true" range="-1.745 1.745" />
+                <inertial mass="0.38" fullinertia="0.00018501 0.00018965 0.00015484 5.4e-07 1.2e-06 -8.41e-06" pos="-9.6663579e-05 0.00087606448 -0.004968809" />
+                <geom name="link4_visual_0" type="mesh" mesh="link4" class="visual" material="link4_mat" />
+                <geom name="link4_collision_0" class="collision" type="mesh" mesh="link4" />
+                <body name="link5" quat="0.70710548 -0.70710808 0 0">
+                  <joint name="joint5" type="hinge" axis="0 0 1" limited="true" range="-1.22 1.22" />
+                  <inertial mass="0.383" fullinertia="0.00166169 0.0001851 0.00164321 6e-08 -7e-08 1.026e-05" pos="-4.1055412e-05 -0.056648669 -0.0037205792" />
+                  <geom name="link5_visual_0" type="mesh" mesh="link5" class="visual" material="link5_mat" />
+                  <geom name="link5_collision_0" class="collision" type="mesh" mesh="link5" />
+                  <body name="link6" pos="8.8259e-05 -0.091 0" quat="0.70710548 0.70710808 0 0">
+                    <joint name="joint6" type="hinge" axis="0 0 1" limited="true" range="-2.0944 2.0944" />
+                    <inertial mass="0.007" fullinertia="5.7301554e-07 5.7301554e-07 1.0673887e-06 0 0 0" pos="-8.8259076e-05 9.0598379e-06 -0.002" />
+                    <geom name="link6_visual_0" type="mesh" mesh="link6" class="visual" material="link6_mat" />
+                    <geom name="link6_collision_0" class="collision" type="mesh" mesh="link6" />
+                    <body name="gripper_base">
+                      <inertial mass="0.45" fullinertia="0.00092934 0.00071447 0.00039442 3.4e-07 -7.38e-06 5e-08" pos="-0.00018380716 8.0503316e-05 0.032143669" />
+                      <geom name="gripper_base_visual_0" type="mesh" mesh="gripper_base" class="visual" material="gripper_base_mat" />
+                      <geom name="gripper_base_collision_0" class="collision" type="mesh" mesh="gripper_base" />
+                      <body name="link7" pos="0 0 0.1358" quat="0.70710548 0.70710808 0 0">
+                        <joint name="joint7" type="slide" axis="0 0 1" limited="true" range="0 0.035" />
+                        <inertial mass="0.025" fullinertia="7.371e-05 7.81e-06 7.47e-05 -1.13e-06 2.1e-07 -1.372e-05" pos="0.00065123185 -0.049192987 0.0097225877" />
+                        <geom name="link7_visual_0" type="mesh" mesh="link7" class="visual" material="link7_mat" />
+                        <geom name="link7_collision_0" class="collision" type="mesh" mesh="link7" />
+                      </body>
+                      <body name="link8" pos="0 0 0.1358" quat="-2.5973435e-06 -2.597353e-06 -0.70710808 -0.70710548">
+                        <joint name="joint8" type="slide" axis="0 0 -1" limited="true" range="-0.035 0" />
+                        <inertial mass="0.025" fullinertia="7.371e-05 7.81e-06 7.47e-05 -1.13e-06 2.1e-07 -1.372e-05" pos="0.00065123185 -0.049192987 0.0097225877" />
+                        <geom name="link8_visual_0" type="mesh" mesh="link8" class="visual" material="link8_mat" />
+                        <geom name="link8_collision_0" class="collision" type="mesh" mesh="link8" />
+                      </body>
+                    </body>
+                  </body>
+                </body>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+  </worldbody>
+  <actuator>
+    <motor name="fl_hipx_joint_motor" joint="fl_hipx_joint" gear="1" ctrllimited="true" ctrlrange="-50 50" />
+    <motor name="fl_hipy_joint_motor" joint="fl_hipy_joint" gear="1" ctrllimited="true" ctrlrange="-50 50" />
+    <motor name="fl_knee_joint_motor" joint="fl_knee_joint" gear="1" ctrllimited="true" ctrlrange="-50 50" />
+    <motor name="fl_wheel_joint_motor" joint="fl_wheel_joint" gear="1" ctrllimited="true" ctrlrange="-14 14" />
+    <motor name="fr_hipx_joint_motor" joint="fr_hipx_joint" gear="1" ctrllimited="true" ctrlrange="-50 50" />
+    <motor name="fr_hipy_joint_motor" joint="fr_hipy_joint" gear="1" ctrllimited="true" ctrlrange="-50 50" />
+    <motor name="fr_knee_joint_motor" joint="fr_knee_joint" gear="1" ctrllimited="true" ctrlrange="-50 50" />
+    <motor name="fr_wheel_joint_motor" joint="fr_wheel_joint" gear="1" ctrllimited="true" ctrlrange="-14 14" />
+    <motor name="hl_hipx_joint_motor" joint="hl_hipx_joint" gear="1" ctrllimited="true" ctrlrange="-50 50" />
+    <motor name="hl_hipy_joint_motor" joint="hl_hipy_joint" gear="1" ctrllimited="true" ctrlrange="-50 50" />
+    <motor name="hl_knee_joint_motor" joint="hl_knee_joint" gear="1" ctrllimited="true" ctrlrange="-50 50" />
+    <motor name="hl_wheel_joint_motor" joint="hl_wheel_joint" gear="1" ctrllimited="true" ctrlrange="-14 14" />
+    <motor name="hr_hipx_joint_motor" joint="hr_hipx_joint" gear="1" ctrllimited="true" ctrlrange="-50 50" />
+    <motor name="hr_hipy_joint_motor" joint="hr_hipy_joint" gear="1" ctrllimited="true" ctrlrange="-50 50" />
+    <motor name="hr_knee_joint_motor" joint="hr_knee_joint" gear="1" ctrllimited="true" ctrlrange="-50 50" />
+    <motor name="hr_wheel_joint_motor" joint="hr_wheel_joint" gear="1" ctrllimited="true" ctrlrange="-14 14" />
+    <motor name="joint1_motor" joint="joint1" gear="1" ctrllimited="true" ctrlrange="-100 100" />
+    <motor name="joint2_motor" joint="joint2" gear="1" ctrllimited="true" ctrlrange="-100 100" />
+    <motor name="joint3_motor" joint="joint3" gear="1" ctrllimited="true" ctrlrange="-100 100" />
+    <motor name="joint4_motor" joint="joint4" gear="1" ctrllimited="true" ctrlrange="-100 100" />
+    <motor name="joint5_motor" joint="joint5" gear="1" ctrllimited="true" ctrlrange="-100 100" />
+    <motor name="joint6_motor" joint="joint6" gear="1" ctrllimited="true" ctrlrange="-100 100" />
+    <motor name="joint7_motor" joint="joint7" gear="1" ctrllimited="true" ctrlrange="-10 10" />
+    <motor name="joint8_motor" joint="joint8" gear="1" ctrllimited="true" ctrlrange="-10 10" />
+  </actuator>
+  <contact>
+    <exclude body1="base_link" body2="fl_hipx" />
+    <exclude body1="fl_hipx" body2="fl_hipy" />
+    <exclude body1="fl_hipy" body2="fl_knee" />
+    <exclude body1="fl_knee" body2="fl_wheel" />
+    <exclude body1="base_link" body2="fr_hipx" />
+    <exclude body1="fr_hipx" body2="fr_hipy" />
+    <exclude body1="fr_hipy" body2="fr_knee" />
+    <exclude body1="fr_knee" body2="fr_wheel" />
+    <exclude body1="base_link" body2="hl_hipx" />
+    <exclude body1="hl_hipx" body2="hl_hipy" />
+    <exclude body1="hl_hipy" body2="hl_knee" />
+    <exclude body1="hl_knee" body2="hl_wheel" />
+    <exclude body1="base_link" body2="hr_hipx" />
+    <exclude body1="hr_hipx" body2="hr_hipy" />
+    <exclude body1="hr_hipy" body2="hr_knee" />
+    <exclude body1="hr_knee" body2="hr_wheel" />
+    <exclude body1="base_link" body2="imu_link" />
+    <exclude body1="base_link" body2="front_lidar_link" />
+    <exclude body1="base_link" body2="back_lidar_link" />
+    <exclude body1="base_link" body2="piper_base_link" />
+    <exclude body1="piper_base_link" body2="link1" />
+    <exclude body1="link1" body2="link2" />
+    <exclude body1="link2" body2="link3" />
+    <exclude body1="link3" body2="link4" />
+    <exclude body1="link4" body2="link5" />
+    <exclude body1="link5" body2="link6" />
+    <exclude body1="link6" body2="gripper_base" />
+    <exclude body1="gripper_base" body2="link7" />
+    <exclude body1="gripper_base" body2="link8" />
+  </contact>
+  <sensor>
+    <framequat name="base_quat" objtype="site" objname="base_site" />
+    <accelerometer site="imu_site" />
+    <gyro site="imu_site" />
+  </sensor>
+</mujoco>

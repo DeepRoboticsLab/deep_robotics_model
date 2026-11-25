@@ -1,6 +1,6 @@
 # Robot Models Repository
 
-This repository contains 3D models for eight Deep Robotics robots: **Lite3**, **M20**, **M20S**, **X30**, **M20_Piper**, **DR02 Pro**, **DR02 Standard**, and **S10**. Models are provided in MJCF, URDF, and, where available, USD formats. To visualize a model and take measurements, we recommend using this [Deep Robotics viewer](https://developer.deeprobotics.cn/viewer/) — just drag the model folder onto the web page.
+This repository contains 3D models for nine Deep Robotics robots: **Lite3**, **M20**, **M20S**, **X30**, **M20_Piper**, **DR02 Pro**, **DR02 Standard**, **S10**, and **S10_Piper**. Models are provided in MJCF, URDF, and, where available, USD formats. To visualize a model and take measurements, we recommend using this [Deep Robotics viewer](https://developer.deeprobotics.cn/viewer/) — just drag the model folder onto the web page.
 
 High-resolution models are available on [Google Drive](https://drive.google.com/drive/folders/1EOELXUYSBPEJeD0rUIkJxnlLMDr6IHBV?usp=sharing) and are intended for use with modern simulators such as Isaac Lab and Isaac Sim. The low-resolution models bundled in this repository are provided for broad compatibility with older simulators.
 
@@ -22,6 +22,7 @@ Each high-resolution URDF matches its low-resolution counterpart in all model fi
 | **DR02 Pro** | <img src="./images/rendered/gridless/high_res/DR02P-H.png" width="320" alt="High-resolution DR02 Pro render" /> | <img src="./images/rendered/gridless/low_res/DR02P.png" width="320" alt="Low-resolution DR02 Pro render" /> |
 | **DR02 Standard** | <img src="./images/rendered/gridless/high_res/DR02D-H.png" width="320" alt="High-resolution DR02 Standard render" /> | <img src="./images/rendered/gridless/low_res/DR02D.png" width="320" alt="Low-resolution DR02 Standard render" /> |
 | **S10** | <img src="./images/rendered/gridless/high_res/S10-H-stance.png" width="320" alt="High-resolution S10 render" /> | <img src="./images/rendered/gridless/low_res/S10-stance.png" width="320" alt="Low-resolution S10 render" /> |
+| **[S10_Piper](./S10_Piper)** | — | <img src="./images/rendered/gridless/low_res/S10P-stance.png" width="320" alt="Low-resolution S10 Piper render" /> |
 
 
 ## Contributors
